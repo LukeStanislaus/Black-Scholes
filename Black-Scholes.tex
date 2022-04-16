@@ -1,0 +1,205 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[12pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage{biblatex} %Imports biblatex package
+\addbibresource{Black-Scholes.bib} %Import the bibliography file
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full infofrmation.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+%\usepackage{hyperef}
+\usepackage{booktabs} % for much better looking tables
+\usepackage{amsmath}
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+
+\usepackage{amsfonts} 
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+%%% END Article customizations
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+
+%%% The "real" document content comes below...
+
+\title{GameStop: A study in the Black-Scholes Formula}
+\author{Luke Stanislaus 2009701}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    This is a simple paragraph at the beginning of the document. A brief introduction to the main subject.
+    \end{abstract}
+
+\section{Introduction}
+
+In the first section of my essay, I plan to outline what happened in February with
+GameStop and the internet, showing graphs of the situation, for example 
+%\href{https://static01.nyt.com/images/2021/02/02/us/gamestop-stock-promo-1612301679434/gamestop-stock-promo-1612301679434-videoSixteenByNineJumbo1600.png}{the stock price over time} 
+%and the \href{https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd6c748xw2pzm8.cloudfront.net%2Fprod%2F034d8f30-6237-11eb-a858-6b1fccb4dc6e-standard.png?dpr=1&fit=scale-down&quality=highest&source=next&width=700}{short interest} 
+in GameStop, in order to motivate the reader in our analysis of the Black-Scholes formula
+under the bizarre situation of GameStop. I can also talk about similar situations 
+in the past of similar significant "short squeezes", and consider how analysing 
+GameStop could allow us to predict future short squeezes with different companies by 
+analysing their financial situation. 
+\paragraph
+I would then move on to explaining the Black-Scholes Model, and could attempt a simple 
+derivation of the Black-Scholes Formula. I can then move on to solving the 
+formula for different intial conditions and variables, using my tools from 
+Programming for Scientists last year to generate graphs of the predicted stock value 
+(and value of options) in Python, where suitable. I will then take a conclusion from 
+my calculations, deciding whether the prelevence of GameStop on messageboards and 
+the internet is what caused the large spike, or if the high short interest in GameStop 
+meant that it was inevitable to happen anyway.
+\paragraph
+I would expect to use Jupyter notebook and Python for graph sketching, and I plan to 
+reference "Stochastic Differential Equations: An Introduction with Applications" by 
+Bernt Karsten Øksendal, and "Options, Futures and Other Derivatives" by John C. Hull 
+as part of writing my essay, as they contain critical information relevant to my topic.
+Below is the Black-Scholes formula:
+
+$\frac{\partial V}{\partial t} + \frac{1}{2}\sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} 
++ rS\frac{\partial V}{\partial S} - rV = 0$
+Where t is time in years, r is the interest rate, S is the price of the underlying asset 
+and $\sigma$ is the standard deviation of the stock's returns.
+\paragraph
+I can also talk about other, more complicated financial models and how they compared to 
+Black-Scholes, for example which assumptions they start to calculate which are ignored
+in Black-Scholes.
+
+$\ A(t) = rA(t) $
+
+Let's cite! Einstein's journal paper \cite{einstein} and Dirac's
+book \cite{dirac} are physics-related items. 
+
+\section{What are shares, options, and short selling?}
+
+\section{What happened to GameStop?}
+
+\section{Asset dynamics}
+
+\subsection{A risk-free asset}
+A risk-free asset, as defined in The Black-Scholes Model \cite{blackscholes} can be thought
+of as a money-market account with zero risk, for example a bank account with an interest 
+rate. It is described by the deterministic function 
+\begin{equation} \label{riskfree}
+    dA(t) = rA(t)\mathrm{d}t 
+\end{equation}
+Where in \ref{riskfree}, $r$ represents the risk-free rate and $A$ the value of the 
+asset. We typically let $r>0$ and $A(0) = 1$ for convenience. This can be rewritten as 
+the ordinary differential equation $A'(t) = rA(t)$, which has the unique solution 
+\begin{equation} \label{riskfree solution}
+    A(t) =e^{rt}
+\end{equation}
+\subsection{Ito processes}
+
+According to Ito process \cite{itoprocess}, an Ito process is the stochastic (random) 
+process $X = \{X_t, t>=0\}$ which solves 
+\begin{equation} \label{randomprocess}
+X_t = X_0 + \int_{0}^{t} a(X_s, s)\mathrm{d}s + 
+\int_{0}^{t} b(X_s, s) \mathrm{d}W_s
+\end{equation}
+Here $X_0$ is the "scalar starting point", and $a,b$ are stochastic 
+processes defined for $\{a(X_t, t) : t\geq0\} $ and $\{b(X_t, t) : t\geq0\}$. 
+Then we call $a$ the drift of the variable, and $b$ is the diffusion, 
+or more precisely in a financial context, volatity. \ref{randomprocess} is commonly 
+written as 
+\begin{equation}
+    X_t = a(X_t, t)\mathrm{d}t + b(X_t, t)\mathrm{d}W_t
+\end{equation}
+or even 
+\begin{equation}
+    X_t = a_t\mathrm{d}t + b_t\mathrm{d}W_t
+\end{equation}
+This converges at some time $T$ to Brownian motion with instantaneous drift $a_T$ and
+variance $b_T^2$. We let $dW$ be normally distributed with mean zero and variance 
+$\mathrm{d}t$. Then we can further simplify \ref{randomprocess} as 
+\begin{equation}
+    \mathrm{d}X_t = a_t\mathrm{d}t + b_t \sqrt{\mathrm{d}t}\xi
+\end{equation}
+where
+\begin{equation}
+    \xi \sim \mathcal{N}(\mu,\,\sigma^{2})
+\end{equation}
+As defined in \cite{itoprocess}, Ito's lemma is 
+
+\begin{lemma}[Ito's Lemma]
+    Suppose $f: R \to R$ is twice continuously differentiable and 
+    $\mathrm{d}X = a_t\mathrm{d}t + b_t\mathrm{d}W$. Then $f(X)$ is the Ito process,
+    \begin{equation}
+        f(X_t)
+        = f(X_0) + \int_0^t \! f'(X_s)a_s \, \mathrm{d}s + 
+        \int_0^t \! f'(X_s)b_s \, \mathrm{d}W + \frac{1}{2}\int_0^t \! f''(X_s)b_s^2 \,
+         \mathrm{d}s
+    \end{equation}
+    for $t\ge0$
+\end{lemma}
+
+\subsection{A risky asset}
+
+A risk asset, as defined in The Black-Scholes Model \cite{blackscholes}, 
+can be thought of as a stock, is represented as the Ito process
+
+\begin{equation}
+    \mathrm{d}S(t) = \mu S(t)\mathrm{d}t + \sigma S(t) \mathrm{d}W(t)
+\end{equation}
+
+with $S(0)$ a given starting price of the stock, $\mu \in \mathbb{R}$ 
+is again the drift and $\sigma > 0$ is the volatility of the stock price $S$.
+\section{Options}
+
+\section{The Black-Scholes Model}
+
+\section{Modelling GameStop}
+
+\section{Extensions to the Black-Scholes Model}
+
+\section{Conclusion}
+
+\printbibliography %Prints bibliography
+\end{document}
