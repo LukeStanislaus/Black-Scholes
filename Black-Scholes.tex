@@ -125,10 +125,19 @@ by buying the stock off the open market they increase demand for the
 stock, increasing the price further, forcing other short sellers to 
 close their positions, driving the price up further. This is what is 
 known as a short squeeze.
+\paragraph{}
+There are also two types of options - a "european" and "american" 
+derivative security. An european option can only be exercised at the 
+strike date, while an american option can be exercised at any time up 
+to the strike date. In this essay we shall only consider the simpler 
+european option, although the american option is far more common in 
+the financial markets.
 
 \section{What happened to GameStop?}
 
-\section{Asset dynamics}
+\subsection{}
+
+\section{Asset dynamics}\label{assetdyamics}
 
 \subsection{A risk-free asset}
 A risk-free asset, as defined in The Black-Scholes Model \cite{blackscholes} can be thought
@@ -176,7 +185,8 @@ where
 
 As defined in \cite{itoprocess}, Ito's lemma is 
 
-\begin{lemma}[Ito's Lemma]
+\begin{lemma}[Ito's Lemma] 
+    \label{itolemma}
     Suppose $f: R \to R$ is twice continuously differentiable and 
     $\mathrm{d}X = a_t\mathrm{d}t + b_t\mathrm{d}W$. Then $f(X)$ is the Ito process,
     \begin{equation}
@@ -289,7 +299,7 @@ which is an Ito process with the constant characteristics $a(t) = (\mu - \frac{1
      (\mathrm{d}S(t))^2 = b^2(t) \mathrm{d}t
  \end{equation}
  If we then partition $[0,t]$ given by $0 = t_1 < \dots < t_n = t$ with small mesh max 
- width $[t_{k+1} = t_k]$, we have 
+ width $[t_{k+1} - t_k]$, we have 
  \begin{equation}
      (\ln{S(t_{k+1}) - \ln{S(t_k)}})^2 \approx \sigma^2 \mathrm{d}t
  \end{equation}
@@ -302,6 +312,104 @@ then
 which is a much better estimate of the volatility coefficient, and is described as the 
 sample volatility.
 \section{Options}
+\subsection{Assumptions}
+
+As in \cite{blackscholes}, before we can begin to derive the Black-Scholes Model, we must 
+state some assumptions.
+\subsubsection{Existence of replicating strategy}\label{replicatingstrategy}
+
+This assumption says that any option investment can be perfectly replciated by holdings in 
+the stock and a money market account directly. A key part of investing is the substantial 
+"leverage" employed in an option, as for a small (as a percentage of the share value) cost 
+you can purchase a large number of shares and sell them for a profit, without having to risk 
+investing such a large amount of money directly into the stock. Our assumption, however, says 
+that a "replicating strategy" always exists. More rigorously, we say that there exists a 
+pair of processes $(x,y)$ which satisfy 
+\begin{equation}
+    H(t) = x(t)S(t) + y(t)A(t)
+\end{equation}
+where $H(t)$ is the option value at time T, an Ito proces.$S(t)$ and $A(t)$ are the risky 
+and riskless assets as defined in Asset Dynamics \ref{assetdyamics}. 
+As described in \cite{blackscholes}, this assumption "captures the idea that changes in the 
+values and holdings of assets are sole drivers of changes of wealth".
+
+Additionally we assume that the process $H(t)$ is of  the form 
+\begin{equation}
+    H(t) = u(t, S(t)).
+\end{equation}
+
+This deterministic function $u(t,z)$ is not dependant on the history of the stock price. 
+It is assmued to have continuous first derivative wrt $x \in [0,T]$ and continuous first 
+and second derivatives in $z \in \mathbb{R}$.
+
+\subsubsection{Assumption 2}
+There again exists a replicating strategy $(x,y)$ which satisfies 
+\begin{equation}\label{replicatingderivative}
+    \mathrm{d} H(t) = x(t)\mathrm{d} S(t) + y(t)\mathrm{d} A(t)
+\end{equation}
+where $H$, $S$, $x$, $y$ and $A$ are as defined in \ref{replicatingstrategy}.
+\subsubsection{Assumption 3}
+There exists a probability Q
+
+
+Applying \ref{itolemma}, we find that $H(t)$ is the Ito process with stochastic differential 
+\begin{equation}\label{itoformulasolve}
+    \mathrm{d}H = (u_t + \mu S u_z + \frac{1}{2} \sigma^2 S^2 u_{zz})\mathrm{d}t + 
+    \sigma S u_z \mathrm{d}W
+\end{equation}
+From \ref{replicatingderivative}, we have
+\begin{align}
+    \mathrm{d}H = x(t)\mathrm{d}S(t) +\mathrm{d}x(t)S(t) 
+\end{align}
+so
+\begin{equation}\label{financingcondition}
+    \mathrm{d}H = (x\mu S + ryA)\mathrm{d}t + x \sigma S \mathrm{d}W 
+\end{equation}
+
+from \ref{riskfree} and \ref{riskyasset}.
+
+Then we equate the right hand side of \ref{itoformulasolve} and \ref{financingcondition}:
+
+\begin{align}\label{dt}
+    u_t + \mu S u_z + \frac{1}{2} \sigma^2 S^2 u_{zz}  = &&x\mu S + ryA &&\text{and} \\
+    \sigma Su_z =&& x\sigma S.\label{dw}
+\end{align}
+
+Now we can start to solve these equations: \ref{dw} gives us
+\begin{equation}
+    x(t) = u_z(t,S(t))
+\end{equation}
+
+which we can use to eliminate x from \ref{dt}:
+
+\begin{equation}
+    u_t + \frac{1}{2}\sigma ^2 S^2u_{zz} = ryA
+\end{equation}
+
+which we then may use to solve for $y(t)$:
+
+\begin{equation}
+    y(t) = \frac{1}{rA(t)}(u_t(t,S(t)) + \frac{1}{2} \sigma^2S^2(t)u_{zz}(t,S(t)) ).
+\end{equation}
+where I have reintroduced the arguements for all the functions.
+
+Finally, we use \ref{replicatingstrategy} and our expressions for $x$ and $y$ to give us
+\begin{align}
+    u(t,S(t)) = u_z(t,S(t))S(t) + \frac{1}{r}\bigg(u_t(t,S(t) + \frac{1}{2}\sigma^2S^2(t)
+    u_{zz}(t,S(t))\bigg) \\\text{since $H(t) = u(t,S(t))$}
+\end{align}
+We now simply rearrange for $u_t(t,z)$:
+\begin{align}\label{blackscholes}
+    u_t(t,z) = -\frac{1}{2}\sigma^2x^2u_{zz}(t,z) - rzu_z(t,z) + ru(t,z) 
+   && \text{for $0<t<T$, $z \in \mathbb{R}$.}
+\end{align}
+We also have the boundary condition that $H(T)$ is equal to the option payoff at the strike 
+date, in other words 
+\begin{align}
+    u(T,z) = \max{(z - K , 0)} && \text{for $z \in \mathbb{R}$}
+\end{align}
+where $K$ is the strike price of the option. We use the $\max$ since there is no point exericsing 
+the option if the strike is above the market value. 
 
 \section{The Black-Scholes Model}
 

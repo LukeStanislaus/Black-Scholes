@@ -1,15 +1,15 @@
 # Fdb version 3
-["biber Black-Scholes"] 1650157665 "Black-Scholes.bcf" "Black-Scholes.bbl" "Black-Scholes" 1650157674
-  "Black-Scholes.bcf" 1650157674 107386 e2bc18c9c848ca31e1169b3dc0c79d08 "pdflatex"
+["biber Black-Scholes"] 1650214466 "Black-Scholes.bcf" "Black-Scholes.bbl" "Black-Scholes" 1650215137
+  "Black-Scholes.bcf" 1650215137 107496 8bd7e966a44059fd49acd357b5325418 "pdflatex"
   "Black-Scholes.bib" 1650155421 2552 211b364ead9ef763e3255960f046c760 ""
   (generated)
   "Black-Scholes.bbl"
   "Black-Scholes.blg"
-["pdflatex"] 1650157672 "c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex" "Black-Scholes.pdf" "Black-Scholes" 1650157674
-  "Black-Scholes.aux" 1650157674 4343 e7e4c700b6d7d214e7c78aa996d29c5e "pdflatex"
-  "Black-Scholes.bbl" 1650157670 7544 cd9656bc6a6c5a99d1e0198b486f8b18 "biber Black-Scholes"
-  "Black-Scholes.run.xml" 1650157674 2371 b5b62c77f54db160a924a13a73cf37d1 "pdflatex"
-  "Black-Scholes.tex" 1650157662 13006 1056426adc92877313ea851b8cd8c5e4 ""
+["pdflatex"] 1650215135 "c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex" "Black-Scholes.pdf" "Black-Scholes" 1650215137
+  "Black-Scholes.aux" 1650215137 5703 e9d54227b379c5527bb50bd9ec8028b8 "pdflatex"
+  "Black-Scholes.bbl" 1650214469 7544 cd9656bc6a6c5a99d1e0198b486f8b18 "biber Black-Scholes"
+  "Black-Scholes.run.xml" 1650215137 2371 b5b62c77f54db160a924a13a73cf37d1 "pdflatex"
+  "Black-Scholes.tex" 1650215135 17470 cdaaaf34e858686d122eb732251ae0af ""
   "C:/Users/lukes/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1650044950 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/lukes/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1639614967 9769968 dd723f8b782397ac08636b9ad3cf7474 ""
   "C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
@@ -50,6 +50,7 @@
   "C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
   "C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
+  "C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1247596666 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb" 1247596666 24393 3b7eb51a67a0a62aec5849271bdb9c2e ""
   "C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
@@ -114,7 +115,7 @@
   "C:/Users/lukes/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1636713860 12694 6c23725d50ab9d1e2d3ce482c58ffcf3 ""
   "C:/Users/lukes/AppData/Local/Programs/MiKTeX/tex/latex/tools/verbatim.sty" 1636713860 7392 39729ae6a807e217edf1442cf8fab2c2 ""
   "C:/Users/lukes/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex" 1650157662 13006 1056426adc92877313ea851b8cd8c5e4 ""
+  "c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex" 1650215135 17470 cdaaaf34e858686d122eb732251ae0af ""
   (generated)
   "Black-Scholes.aux"
   "Black-Scholes.bcf"

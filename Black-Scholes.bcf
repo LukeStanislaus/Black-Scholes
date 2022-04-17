@@ -2354,6 +2354,8 @@
     <bcf:citekey order="8">blackscholes</bcf:citekey>
     <bcf:citekey order="9">blackscholes</bcf:citekey>
     <bcf:citekey order="10">quadtraticvariation</bcf:citekey>
+    <bcf:citekey order="11">blackscholes</bcf:citekey>
+    <bcf:citekey order="12">blackscholes</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
