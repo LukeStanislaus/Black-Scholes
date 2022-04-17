@@ -155,23 +155,73 @@
       \field{year}{2012}
       \keyw{black-scholes}
     \endentry
+    \entry{wsb}{online}{}
+      \name{author}{1}{}{%
+        {{hash=6a18517ca1768b3a84cd792ba4677746}{%
+           family={Reddit.com},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{6a18517ca1768b3a84cd792ba4677746}
+      \strng{fullhash}{6a18517ca1768b3a84cd792ba4677746}
+      \strng{bibnamehash}{6a18517ca1768b3a84cd792ba4677746}
+      \strng{authorbibnamehash}{6a18517ca1768b3a84cd792ba4677746}
+      \strng{authornamehash}{6a18517ca1768b3a84cd792ba4677746}
+      \strng{authorfullhash}{6a18517ca1768b3a84cd792ba4677746}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 17.04.2022)}
+      \field{title}{wallstreetbets}
+      \verb{urlraw}
+      \verb https://www.reddit.com/r/wallstreetbets/
+      \endverb
+      \verb{url}
+      \verb https://www.reddit.com/r/wallstreetbets/
+      \endverb
+      \keyw{wsb,wallstreetbets,reddit}
+    \endentry
+    \entry{volkswagen}{online}{}
+      \name{author}{1}{}{%
+        {{hash=40d18d5a7ae85f9597a40f1306041fd1}{%
+           family={Sean},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{40d18d5a7ae85f9597a40f1306041fd1}
+      \strng{fullhash}{40d18d5a7ae85f9597a40f1306041fd1}
+      \strng{bibnamehash}{40d18d5a7ae85f9597a40f1306041fd1}
+      \strng{authorbibnamehash}{40d18d5a7ae85f9597a40f1306041fd1}
+      \strng{authornamehash}{40d18d5a7ae85f9597a40f1306041fd1}
+      \strng{authorfullhash}{40d18d5a7ae85f9597a40f1306041fd1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 17.04.2022)}
+      \field{title}{Remembering the Legendary Volkswagen Short Squeeze}
+      \verb{urlraw}
+      \verb https://www.warriortrading.com/volkswagen-short-squeeze/
+      \endverb
+      \verb{url}
+      \verb https://www.warriortrading.com/volkswagen-short-squeeze/
+      \endverb
+      \keyw{volkswagen,short,squeeze}
+    \endentry
     \entry{shares}{online}{}
       \name{author}{1}{}{%
-        {{hash=1d82ecc01f07249732037742f6b1d040}{%
-           family={team},
-           familyi={t\bibinitperiod},
-           given={The},
-           giveni={T\bibinitperiod},
-           prefix={investopedia},
-           prefixi={i\bibinitperiod}}}%
+        {{hash=3cab4353b56af64c5deb8e7da2d86ec6}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={The\bibnamedelima Investopedia},
+           giveni={T\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
       }
-      \strng{namehash}{1d82ecc01f07249732037742f6b1d040}
-      \strng{fullhash}{1d82ecc01f07249732037742f6b1d040}
-      \strng{bibnamehash}{1d82ecc01f07249732037742f6b1d040}
-      \strng{authorbibnamehash}{1d82ecc01f07249732037742f6b1d040}
-      \strng{authornamehash}{1d82ecc01f07249732037742f6b1d040}
-      \strng{authorfullhash}{1d82ecc01f07249732037742f6b1d040}
-      \field{sortinit}{t}
+      \strng{namehash}{3cab4353b56af64c5deb8e7da2d86ec6}
+      \strng{fullhash}{3cab4353b56af64c5deb8e7da2d86ec6}
+      \strng{bibnamehash}{3cab4353b56af64c5deb8e7da2d86ec6}
+      \strng{authorbibnamehash}{3cab4353b56af64c5deb8e7da2d86ec6}
+      \strng{authornamehash}{3cab4353b56af64c5deb8e7da2d86ec6}
+      \strng{authorfullhash}{3cab4353b56af64c5deb8e7da2d86ec6}
+      \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}

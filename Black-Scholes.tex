@@ -9,6 +9,8 @@
 \usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
 \usepackage{biblatex} %Imports biblatex package
 \addbibresource{Black-Scholes.bib} %Import the bibliography file
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
 
 %%% Examples of Article customizations
 % These packages are optional, depending whether you want the features they provide.
@@ -73,10 +75,13 @@
 \maketitle
 
 \begin{abstract}
-    This is a simple paragraph at the beginning of the document. A brief introduction to the main subject.
+    This essay is about the Black-Scholes formula, and how it could be 
+    used to explain the short squeeze of GameStop in early 2021. We begin 
+    with explaining shares, options and short selling, and move on to 
+    deriving the Black-Scholes formula, and finally apply it to GameStop.
     \end{abstract}
 
-\section{Introduction}
+%\section{Introduction}
 
 
 \section{What are shares, options, and short selling?}
@@ -133,12 +138,73 @@ to the strike date. In this essay we shall only consider the simpler
 european option, although the american option is far more common in 
 the financial markets.
 
-\section{What happened to GameStop?}
+\section{Short squeezes and GameStop}
+A short squeeze is relatively uncommon occurance in financial markets, but they do 
+happen, normally due to substancial short interest in the stop, i.e. a large number 
+of the shares sold short, an a samll available float - the number of shares 
+available to purchaase on the market. This means, as the short sellers (traders 
+writing call options) are forced to close their positions, they are fighting over 
+a small number of stocks, inflating the price to extraordinary values. 
+\paragraph{}
+For example, 
+in 2008, Porsche began to buy large amounts of Volkswagen stock off the market. This 
+meant that only 6\% of the stock was available on the market, while 13\% of the stock 
+was sold short. Th\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{volkswagen.jpg}
+    \caption{The stock price of Volkswagen during the short squeeze of 2008}
+    \end{figure}is caused a scramble for the final few shares, and as short sellers 
+were squeezed out by the high price and were forced to close their position by buying 
+more of the stock, the price went higher and higher, and Volkswagen briefly became 
+the highest value company in the world. The squeeze only ended when Porsche announced 
+it would sell around 5\% of its stake in order to make life easier for the hedge 
+funds - it is estimated that the squeeze cost short sellers around £30 billion, 
+according to \cite{volkswagen}, with massvive profits going over to Porsche.
 
-\subsection{}
+\paragraph{}
+The case of GameStop is similar - there was an extreme amount of short interest in 
+the share, so that at one point more than \%100 of the stock was sold short. With 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{gamestopprice.png}
+    \caption{The stock price of GameStop over the past 5 years.}\label{gamestopprice}
+    \end{figure}
+    COVID and the death of the high street, a brick and mortar store like GameStop was 
+considered an extremely safe short sell - and as you can see from \ref{gamestopprice}  
+until early 2021, the price of GameStop was dropping extremely consistently. This  
+meant that it had an extremely high short interest, as you can see in \ref{shortinterest}. 
+This was noticed by a messageboard on the internet, called "r/wallstreetbets" \cite{wsb}. 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{shortinterest.png}
+    \caption{The short interest in GameStop over the past 5 years.}
+    \label{shortinterest}
+    \end{figure}
+The independant investors saw 
+this as greed from the large hedge funds making billions of safe money from the demise 
+of a high street store, and when Ryan Cohen, who had just created the hugely sucessful 
+"Chewy", the largest onine pet retailer, joined GameStop's board as chairman. Investors
+on r/wallstreetbets saw this as a very positive sign, as they imagined Ryan could turn 
+GameStop into "Amazon, but for computer games". Hence they attempted to create a 
+short squeeze in GameStop, hoping to profit from the greed of the hedge funds. They 
+began purchasing the stock, both increasing the price and reducing the available float, 
+so that as short sellers attempted to close their positions due to rising prices, they 
+found themselves fighting over a smaller and smaller number of shares, similar to the 
+Volkswagen case. This caused a signfiicant short squeeze in the price, profiting the 
+independant investors who had invested early on, as seen in \ref{shortsqeeze}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{shortsqueeze.png}
+    \caption{The stock price of GameStop in early 2021, during the squeeze.}
+    \label{shortsqeeze}
+    \end{figure}
 
 \section{Asset dynamics}\label{assetdyamics}
-
+However, the squeeze was short lived - as the stock increased tenfold, independant 
+investors began to cash out on their profits and sell their stock, the pressure 
+on the short sellers became reduced and they were able to exit their positions. 
+This is in contrast to the Volkswagen case, where the shares were all owned by one 
+party, who completely refused to sell its shares, pushing the share price much higher.
 \subsection{A risk-free asset}
 A risk-free asset, as defined in The Black-Scholes Model \cite{blackscholes} can be thought
 of as a money-market account with zero risk, for example a bank account with an interest 
@@ -352,11 +418,15 @@ where $H$, $S$, $x$, $y$ and $A$ are as defined in \ref{replicatingstrategy}.
 There exists a probability Q
 
 
-Applying \ref{itolemma}, we find that $H(t)$ is the Ito process with stochastic differential 
-\begin{equation}\label{itoformulasolve}
-    \mathrm{d}H = (u_t + \mu S u_z + \frac{1}{2} \sigma^2 S^2 u_{zz})\mathrm{d}t + 
-    \sigma S u_z \mathrm{d}W
-\end{equation}
+Applying \ref{itolemma} with $u(t,Z) = f(Z)$ we get   
+\begin{align}\label{itoformulasolve}
+    \mathrm{d}u(Z)  = u_z(Z)\mu \mathrm{d}t + u_z(Z)\sigma \mathrm{d}W + \frac{1}{2}
+    u_{zz}(Z) \sigma^2 \mathrm{d}t&& \text{and} \\
+    \mathrm{d}u(t) = u_t &&\text{then} \\
+    \mathrm{d}H =\mathrm{d}u = \mathrm{d}u(Z) +\mathrm{d}u(t) =   (u_t + \mu S u_z + \frac{1}{2} 
+    \sigma^2 S^2 u_{zz})\mathrm{d}t + +\sigma S u_z \mathrm{d}W
+\end{align}
+as a stochastic differential.
 From \ref{replicatingderivative}, we have
 \begin{align}
     \mathrm{d}H = x(t)\mathrm{d}S(t) +\mathrm{d}x(t)S(t) 

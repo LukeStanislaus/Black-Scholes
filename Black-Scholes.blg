@@ -1,15 +1,15 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'Black-Scholes.blg'
-[131] biber-MSWIN64:340> INFO - === 
-[178] Biber.pm:415> INFO - Reading 'Black-Scholes.bcf'
-[317] Biber.pm:952> INFO - Found 6 citekeys in bib section 0
-[334] Biber.pm:4340> INFO - Processing section 0
-[347] Biber.pm:4531> INFO - Looking for bibtex format file 'Black-Scholes.bib' for section 0
-[405] bibtex.pm:1689> INFO - LaTeX decoding ...
-[422] bibtex.pm:1494> INFO - Found BibTeX data source 'Black-Scholes.bib'
-[536] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[537] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[537] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[537] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[547] bbl.pm:654> INFO - Writing 'Black-Scholes.bbl' with encoding 'UTF-8'
-[551] bbl.pm:757> INFO - Output to Black-Scholes.bbl
+[146] biber-MSWIN64:340> INFO - === 
+[204] Biber.pm:415> INFO - Reading 'Black-Scholes.bcf'
+[367] Biber.pm:952> INFO - Found 8 citekeys in bib section 0
+[385] Biber.pm:4340> INFO - Processing section 0
+[398] Biber.pm:4531> INFO - Looking for bibtex format file 'Black-Scholes.bib' for section 0
+[453] bibtex.pm:1689> INFO - LaTeX decoding ...
+[471] bibtex.pm:1494> INFO - Found BibTeX data source 'Black-Scholes.bib'
+[561] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[561] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[561] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[561] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[573] bbl.pm:654> INFO - Writing 'Black-Scholes.bbl' with encoding 'UTF-8'
+[577] bbl.pm:757> INFO - Output to Black-Scholes.bbl
