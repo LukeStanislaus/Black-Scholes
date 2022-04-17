@@ -19,62 +19,87 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{dirac}{book}{}
+    \entry{quadtraticvariation}{online}{}
       \name{author}{1}{}{%
-        {{hash=59342ede3a101402b34939644b51ad06}{%
-           family={Dirac},
-           familyi={D\bibinitperiod},
-           given={Paul\bibnamedelimb Adrien\bibnamedelima Maurice},
-           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=4e8a406999de17a6fff7f67c9c707c8e}{%
+           family={a.gnedin},
+           familyi={a\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Clarendon Press}%
-      }
-      \strng{namehash}{59342ede3a101402b34939644b51ad06}
-      \strng{fullhash}{59342ede3a101402b34939644b51ad06}
-      \strng{bibnamehash}{59342ede3a101402b34939644b51ad06}
-      \strng{authorbibnamehash}{59342ede3a101402b34939644b51ad06}
-      \strng{authornamehash}{59342ede3a101402b34939644b51ad06}
-      \strng{authorfullhash}{59342ede3a101402b34939644b51ad06}
-      \field{sortinit}{D}
-      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \strng{namehash}{4e8a406999de17a6fff7f67c9c707c8e}
+      \strng{fullhash}{4e8a406999de17a6fff7f67c9c707c8e}
+      \strng{bibnamehash}{4e8a406999de17a6fff7f67c9c707c8e}
+      \strng{authorbibnamehash}{4e8a406999de17a6fff7f67c9c707c8e}
+      \strng{authornamehash}{4e8a406999de17a6fff7f67c9c707c8e}
+      \strng{authorfullhash}{4e8a406999de17a6fff7f67c9c707c8e}
+      \field{sortinit}{a}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{isbn}{9780198520115}
-      \field{series}{International series of monographs on physics}
-      \field{title}{The Principles of Quantum Mechanics}
-      \field{year}{1981}
-      \keyw{physics}
-    \endentry
-    \entry{einstein}{article}{}
-      \name{author}{1}{}{%
-        {{hash=3ebf53e52a3ce84f0ffb8553200a6a63}{%
-           family={Einstein},
-           familyi={E\bibinitperiod},
-           given={Albert},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \strng{fullhash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \strng{bibnamehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \strng{authorbibnamehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \strng{authornamehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \strng{authorfullhash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Annalen der Physik}
-      \field{number}{10}
-      \field{title}{{Zur Elektrodynamik bewegter Körper}. ({German}) [{On} the electrodynamics of moving bodies]}
-      \field{volume}{322}
-      \field{year}{1905}
-      \field{pages}{891\bibrangedash 921}
-      \range{pages}{31}
-      \verb{doi}
-      \verb http://dx.doi.org/10.1002/andp.19053221004
+      \field{addendum}{(accessed: 16.04.2022)}
+      \field{title}{Ito formula and processes}
+      \verb{urlraw}
+      \verb https://webspace.maths.qmul.ac.uk/a.gnedin/StochCalcDocs/StochCalcSection3.pdf
       \endverb
-      \keyw{physics}
+      \verb{url}
+      \verb https://webspace.maths.qmul.ac.uk/a.gnedin/StochCalcDocs/StochCalcSection3.pdf
+      \endverb
+      \keyw{quadratic,variation}
+    \endentry
+    \entry{options}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ad06bf06adee8d95fd62057f57acb739}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{ad06bf06adee8d95fd62057f57acb739}
+      \strng{fullhash}{ad06bf06adee8d95fd62057f57acb739}
+      \strng{bibnamehash}{ad06bf06adee8d95fd62057f57acb739}
+      \strng{authorbibnamehash}{ad06bf06adee8d95fd62057f57acb739}
+      \strng{authornamehash}{ad06bf06adee8d95fd62057f57acb739}
+      \strng{authorfullhash}{ad06bf06adee8d95fd62057f57acb739}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 16.04.2022)}
+      \field{title}{Options}
+      \verb{urlraw}
+      \verb https://www.investopedia.com/terms/o/option.asp
+      \endverb
+      \verb{url}
+      \verb https://www.investopedia.com/terms/o/option.asp
+      \endverb
+      \keyw{options}
+    \endentry
+    \entry{SDE}{online}{}
+      \name{author}{1}{}{%
+        {{hash=aba73ed000314fec04f1aa1ae26bac88}{%
+           family={Lalley},
+           familyi={L\bibinitperiod},
+           given={Steven\bibnamedelima P.},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{aba73ed000314fec04f1aa1ae26bac88}
+      \strng{fullhash}{aba73ed000314fec04f1aa1ae26bac88}
+      \strng{bibnamehash}{aba73ed000314fec04f1aa1ae26bac88}
+      \strng{authorbibnamehash}{aba73ed000314fec04f1aa1ae26bac88}
+      \strng{authornamehash}{aba73ed000314fec04f1aa1ae26bac88}
+      \strng{authorfullhash}{aba73ed000314fec04f1aa1ae26bac88}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 16.04.2022)}
+      \field{title}{Stochastic Differential Equations}
+      \verb{urlraw}
+      \verb https://galton.uchicago.edu/~lalley/Courses/385/SDE.pdf
+      \endverb
+      \verb{url}
+      \verb https://galton.uchicago.edu/~lalley/Courses/385/SDE.pdf
+      \endverb
+      \keyw{stochastic,differential,equations}
     \endentry
     \entry{itoprocess}{online}{}
       \name{author}{1}{}{%
@@ -129,6 +154,36 @@
       \field{title}{The Black-Scholes Model}
       \field{year}{2012}
       \keyw{black-scholes}
+    \endentry
+    \entry{shares}{online}{}
+      \name{author}{1}{}{%
+        {{hash=1d82ecc01f07249732037742f6b1d040}{%
+           family={team},
+           familyi={t\bibinitperiod},
+           given={The},
+           giveni={T\bibinitperiod},
+           prefix={investopedia},
+           prefixi={i\bibinitperiod}}}%
+      }
+      \strng{namehash}{1d82ecc01f07249732037742f6b1d040}
+      \strng{fullhash}{1d82ecc01f07249732037742f6b1d040}
+      \strng{bibnamehash}{1d82ecc01f07249732037742f6b1d040}
+      \strng{authorbibnamehash}{1d82ecc01f07249732037742f6b1d040}
+      \strng{authornamehash}{1d82ecc01f07249732037742f6b1d040}
+      \strng{authorfullhash}{1d82ecc01f07249732037742f6b1d040}
+      \field{sortinit}{t}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 16.04.2022)}
+      \field{title}{Shares}
+      \verb{urlraw}
+      \verb https://www.investopedia.com/terms/s/shares.asp
+      \endverb
+      \verb{url}
+      \verb https://www.investopedia.com/terms/s/shares.asp
+      \endverb
+      \keyw{shares}
     \endentry
   \enddatalist
 \endrefsection

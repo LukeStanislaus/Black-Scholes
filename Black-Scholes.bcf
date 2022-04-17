@@ -2344,12 +2344,16 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">Black-Scholes.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">einstein</bcf:citekey>
-    <bcf:citekey order="2">dirac</bcf:citekey>
+    <bcf:citekey order="1">shares</bcf:citekey>
+    <bcf:citekey order="2">options</bcf:citekey>
     <bcf:citekey order="3">blackscholes</bcf:citekey>
     <bcf:citekey order="4">itoprocess</bcf:citekey>
     <bcf:citekey order="5">itoprocess</bcf:citekey>
-    <bcf:citekey order="6">blackscholes</bcf:citekey>
+    <bcf:citekey order="6">SDE</bcf:citekey>
+    <bcf:citekey order="7">blackscholes</bcf:citekey>
+    <bcf:citekey order="8">blackscholes</bcf:citekey>
+    <bcf:citekey order="9">blackscholes</bcf:citekey>
+    <bcf:citekey order="10">quadtraticvariation</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

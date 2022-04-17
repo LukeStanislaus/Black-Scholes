@@ -4,7 +4,7 @@
 % This is a simple template for a LaTeX document using the "article" class.
 % See "book", "report", "letter" for other types of document.
 
-\documentclass[12pt]{article} % use larger type; default would be 10pt
+\documentclass[11pt]{article} % use larger type; default would be 10pt
 
 \usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
 \usepackage{biblatex} %Imports biblatex package
@@ -78,46 +78,53 @@
 
 \section{Introduction}
 
-In the first section of my essay, I plan to outline what happened in February with
-GameStop and the internet, showing graphs of the situation, for example 
-%\href{https://static01.nyt.com/images/2021/02/02/us/gamestop-stock-promo-1612301679434/gamestop-stock-promo-1612301679434-videoSixteenByNineJumbo1600.png}{the stock price over time} 
-%and the \href{https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd6c748xw2pzm8.cloudfront.net%2Fprod%2F034d8f30-6237-11eb-a858-6b1fccb4dc6e-standard.png?dpr=1&fit=scale-down&quality=highest&source=next&width=700}{short interest} 
-in GameStop, in order to motivate the reader in our analysis of the Black-Scholes formula
-under the bizarre situation of GameStop. I can also talk about similar situations 
-in the past of similar significant "short squeezes", and consider how analysing 
-GameStop could allow us to predict future short squeezes with different companies by 
-analysing their financial situation. 
-\paragraph
-I would then move on to explaining the Black-Scholes Model, and could attempt a simple 
-derivation of the Black-Scholes Formula. I can then move on to solving the 
-formula for different intial conditions and variables, using my tools from 
-Programming for Scientists last year to generate graphs of the predicted stock value 
-(and value of options) in Python, where suitable. I will then take a conclusion from 
-my calculations, deciding whether the prelevence of GameStop on messageboards and 
-the internet is what caused the large spike, or if the high short interest in GameStop 
-meant that it was inevitable to happen anyway.
-\paragraph
-I would expect to use Jupyter notebook and Python for graph sketching, and I plan to 
-reference "Stochastic Differential Equations: An Introduction with Applications" by 
-Bernt Karsten Øksendal, and "Options, Futures and Other Derivatives" by John C. Hull 
-as part of writing my essay, as they contain critical information relevant to my topic.
-Below is the Black-Scholes formula:
-
-$\frac{\partial V}{\partial t} + \frac{1}{2}\sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} 
-+ rS\frac{\partial V}{\partial S} - rV = 0$
-Where t is time in years, r is the interest rate, S is the price of the underlying asset 
-and $\sigma$ is the standard deviation of the stock's returns.
-\paragraph
-I can also talk about other, more complicated financial models and how they compared to 
-Black-Scholes, for example which assumptions they start to calculate which are ignored
-in Black-Scholes.
-
-$\ A(t) = rA(t) $
-
-Let's cite! Einstein's journal paper \cite{einstein} and Dirac's
-book \cite{dirac} are physics-related items. 
 
 \section{What are shares, options, and short selling?}
+\subsection{Shares}
+As defined in "Investopedia" \cite{shares}, shares are "units of equity 
+ownership in a corporation." Writing shares is an effective way to raise 
+capital for a firm, as there is not legal mandate to be repaid to 
+investors, and to not pay interest. Common shares usually offer a voting 
+rights, giving shareholders more control over a business. The value of 
+shares rises and falls with demand - meaning that owning a stock assumes 
+the owner a level of risk. Many stocks also offer dividends to 
+shareholders, which is a proportion of the businesses profits paid out 
+directly.
+\subsection{Options}
+Again, as defined in \cite{options}, "the term option refers to a 
+financial instrument based on the value of the underlying security, 
+such as stocks." An options contract offers the holder the option, 
+not the obligation (in contrast to a "future"), to buy or sell a share 
+at a predetermined price. In themselves, they are a form of asset and 
+as such have their own valuations and market value. A "call" option 
+is when the writer of the option promises to sell the stock at a 
+predetermined price, called the "strike" at a predetermined time, 
+called the "strike date". This means that if you own a call option and 
+the stock price increases above the strike, the writer will still have 
+to honor the strike and so you can "exercise" the option 
+and immediately sell the stock, where your profit is the difference 
+between the strike and current price, less the cost of the option. 
+However, if the price goes below the strike, you would be forced 
+to let your option expire worthless, since by exercising the option 
+you would pay above the market rate. In this way, the losses are limited 
+but the profits are unlimited - you can only lose what you paid for the 
+call options, but stand to gain an unlimited amount as the stock price 
+increases. 
+\paragraph{}
+On the other hand, if an investor expects a stock to decrease 
+in value, they could write a call (also known as a short call). This 
+means that if the stock has increase in value and you don't already own 
+the security, you are obligated to purchase at the market rate, which 
+could take any arbitrary value. Further to this, as the price increases 
+over time, the short seller may be "margin called" - when to ensure the 
+seller can pay, the broker requests that the seller puts more money into 
+their account. If the short seller cannot afford this (and the further 
+risk it entails), they can close their position - by buying the stocks 
+they owe, the are protected from any further increases in price. However, 
+by buying the stock off the open market they increase demand for the 
+stock, increasing the price further, forcing other short sellers to 
+close their positions, driving the price up further. This is what is 
+known as a short squeeze.
 
 \section{What happened to GameStop?}
 
@@ -166,6 +173,7 @@ where
 \begin{equation}
     \xi \sim \mathcal{N}(\mu,\,\sigma^{2})
 \end{equation}
+
 As defined in \cite{itoprocess}, Ito's lemma is 
 
 \begin{lemma}[Ito's Lemma]
@@ -179,18 +187,120 @@ As defined in \cite{itoprocess}, Ito's lemma is
     \end{equation}
     for $t\ge0$
 \end{lemma}
+We shall also require Ito's existence/uniqueness theorem, as defined in 
+\cite{SDE}:
+
+\begin{theorem}[Ito's Existence And Uniqueness Theorem] 
+    \label{isosexistence}
+    If $\mu : \mathbb{R} \to \mathbb{R}$ and $\sigma : \mathbb{R} \to \mathbb{R}_+$ 
+    are uniformally Lipschitz, then the stochastic differential equation 
+    \ref{randomprocess} has "strong solutions". This means that for any standard 
+    Brownian motion $\{W_t\}_{t\geq0}$, any admissable filtration $\mathbb{F} = 
+    \{\mathcal{F}_t\}$ and any initial value $x \in \mathbb{R}$ there exists a 
+    unique proccess $X_t = X_t^x$ which solves \ref{randomprocess}.
+
+    
+\end{theorem}
 
 \subsection{A risky asset}
 
 A risk asset, as defined in The Black-Scholes Model \cite{blackscholes}, 
 can be thought of as a stock, is represented as the Ito process
 
-\begin{equation}
+\begin{equation} \label{riskyasset}
     \mathrm{d}S(t) = \mu S(t)\mathrm{d}t + \sigma S(t) \mathrm{d}W(t)
 \end{equation}
 
 with $S(0)$ a given starting price of the stock, $\mu \in \mathbb{R}$ 
-is again the drift and $\sigma > 0$ is the volatility of the stock price $S$.
+is again the drift and $\sigma > 0$ is the volatility of the stock 
+price $S$. Using \ref{isosexistence} we can prove existence and uniqueness of 
+\ref{riskyasset}:
+
+First we rewrite \ref{riskyasset} in integral form:
+\begin{equation}\label{riskyint}
+    S(t) = S(0) + \mu\int_0^t \! S(u) \, \mathrm{d}u + \sigma\int_0^t \! S(u) \, 
+    \mathrm{d}W(u).
+\end{equation}
+
+Then we rewrite our coefficients in the form of \ref{randomprocess}: 
+
+\begin{align}
+    \mu S(t) = a(t,S(t)), && a(t,x) = \mu x \\
+    \sigma S(t) = b(t,S(t), && b(t,x) = \sigma x
+\end{align}
+
+then we check Lipschitz continuity:
+
+\begin{align}
+    |a(t,x) - a(t,y)| &= |\mu(x-y)| \leq |\mu||x-y|, \\
+    |b(t,x) - b(t,y)| &= |\sigma(x-y)| \leq \sigma|x-y| &&\text{Since $\sigma > 0$.}
+\end{align}
+
+We then have that the unique solution to \ref{riskyasset} is of the form 
+\begin{equation}
+    S(t) = S(0)exp\{\mu t - \frac{\sigma^2}{2}t + \sigma W(t)\}.
+\end{equation}
+This can be easily substituted into \ref{riskyint} show that this solves \ref{riskyasset}.
+
+\subsection{Considering the model parameters}
+
+Now we have a soluition to a risky asset, we can consider $\mathbb{E}(S(t))$:
+
+\begin{align}
+    \mathbb{E}(S(t))  = &&S(t)\mathbb{E}(exp\{\mu - \frac{1}{2}\sigma t + \sigma W(t)\})\\
+     \label{variance}= 
+     && S(0)exp\{\mu t - \frac{1}{2}\sigma^2 t\}\mathbb{E}(exp\{\sigma W(t)\} \\
+    \label{result} = && S(0)exp\{\mu t\}).
+\end{align}
+
+Where at \ref{variance} we use the fact that 
+
+\begin{equation*}
+    \mathbb{E}(exp\{X\}) = exp\{\frac{1}{2}Var(X)\}
+\end{equation*}
+
+\ref{result} then shows that if $\mu = 0$ we know that the expectation of S(t) is 
+constant in time - it is not "drifting" in any direction, which justifies the 
+naming of $\mu$ as drift. We can then rearrange for $\mu$:
+
+\begin{equation} \label{mu}
+    \mu = \frac{1}{t}\ln{\frac{\mathbb{E}(S(t))}{S(0)}}.
+\end{equation}
+
+which is that logarithmic return of the expected price.
+The variance of the return is 
+\begin{align}
+    Var(\mu t - \frac{\sigma^2}{2}t + \sigma W(t)) = && Var(\sigma W(t)) \\
+    = && \sigma^2t  && \text{since Var(W(t)) = t}
+\end{align}
+as defined in \cite{blackscholes}. Clearly we want to try to calculate $\mu$ and 
+$\sigma$ to apply to our model. \ref{mu} could suggest taking past values of the 
+stock value and taking an average to find a value of $\mu$, but according to 
+\cite{blackscholes} the accuracy of this is poor. 
+A more effective approximation of the volatility is, for example, the process 
+
+\begin{equation}
+    \ln{S(t)} = \ln{S(0)} + (\mu - \frac{1}{2}\sigma^2)t + \sigma W(t))
+\end{equation}
+
+which is an Ito process with the constant characteristics $a(t) = (\mu - \frac{1}{2}\sigma^2)$
+ and $b(t) = \sigma$. By \cite{quadtraticvariation}, we have that
+ \begin{equation}
+     (\mathrm{d}S(t))^2 = b^2(t) \mathrm{d}t
+ \end{equation}
+ If we then partition $[0,t]$ given by $0 = t_1 < \dots < t_n = t$ with small mesh max 
+ width $[t_{k+1} = t_k]$, we have 
+ \begin{equation}
+     (\ln{S(t_{k+1}) - \ln{S(t_k)}})^2 \approx \sigma^2 \mathrm{d}t
+ \end{equation}
+then 
+\begin{align}
+    \sum_k (\ln{S(t_{k+1}) - \ln{S(t_k)}})^2 \approx \sigma^2 t\\
+    \implies
+    \sigma = \sqrt{\frac{1}{2}\sum_k (\ln{\frac{S(t_{k+1})}{S(t_k)}})^2}
+\end{align}
+which is a much better estimate of the volatility coefficient, and is described as the 
+sample volatility.
 \section{Options}
 
 \section{The Black-Scholes Model}

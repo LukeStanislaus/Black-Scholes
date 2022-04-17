@@ -1,15 +1,15 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
-[1] Config.pm:314> INFO - Logfile is 'Black-Scholes.blg'
-[143] biber-MSWIN64:340> INFO - === 
-[185] Biber.pm:415> INFO - Reading 'Black-Scholes.bcf'
-[330] Biber.pm:952> INFO - Found 4 citekeys in bib section 0
-[351] Biber.pm:4340> INFO - Processing section 0
-[365] Biber.pm:4531> INFO - Looking for bibtex format file 'Black-Scholes.bib' for section 0
-[423] bibtex.pm:1689> INFO - LaTeX decoding ...
-[438] bibtex.pm:1494> INFO - Found BibTeX data source 'Black-Scholes.bib'
-[521] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[522] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[522] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[522] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[531] bbl.pm:654> INFO - Writing 'Black-Scholes.bbl' with encoding 'UTF-8'
-[533] bbl.pm:757> INFO - Output to Black-Scholes.bbl
+[0] Config.pm:314> INFO - Logfile is 'Black-Scholes.blg'
+[234] biber-MSWIN64:340> INFO - === 
+[324] Biber.pm:415> INFO - Reading 'Black-Scholes.bcf'
+[509] Biber.pm:952> INFO - Found 6 citekeys in bib section 0
+[535] Biber.pm:4340> INFO - Processing section 0
+[561] Biber.pm:4531> INFO - Looking for bibtex format file 'Black-Scholes.bib' for section 0
+[776] bibtex.pm:1689> INFO - LaTeX decoding ...
+[828] bibtex.pm:1494> INFO - Found BibTeX data source 'Black-Scholes.bib'
+[960] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[960] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[960] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[960] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[981] bbl.pm:654> INFO - Writing 'Black-Scholes.bbl' with encoding 'UTF-8'
+[984] bbl.pm:757> INFO - Output to Black-Scholes.bbl
