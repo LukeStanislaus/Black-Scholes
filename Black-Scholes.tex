@@ -540,18 +540,30 @@ We then finally get the following, the Black-Scholes European Call option IBVP:
 \begin{align}
     u_t(t,z) +\frac{1}{2}\sigma^2z^2u_{zz}(t,z) + rzu_z(t,z) - ru(t,z) = 0 &&
     \text{for $(t,z) \in (0,T) \times \mathbb{R}_+ $}\\
-    \text{with initial condition: } && u(0,z) = \max{(z-K, 0)} \text{, } 
-    z \in \mathbb{R}_+ \\
-    \text{and boundary conditions: } && u(t, 0) = 0 \text{,  $u(t,z) = 
-    z - Ke^{-r(T-t)}$ as $z \to \infty $,  $t \in [0,T]$}
+    \text{with initial condition: } &&
+     u(0,z) = \max{(z-K, 0)} \text{, } z \in \mathbb{R}_+ \\
+    \text{and boundary conditions: } && 
+    u(t, 0) = 0 \text{,  $u(t,z) = z - Ke^{-r(T-t)}$}\\
+    \text{as $z \to \infty $,  $t \in [0,T]$}
 \end{align}
 
 \section{Modelling GameStop}
-We begin by using \ref{volatilityapprox} a calculate a value of $sigma$. Using data from 
+We begin by using \ref{volatilityapprox} a calculate a value of $\sigma$. Using data from 
 \cite{nyse} between 2018 - 2020, in the attached excel book we 
 calculate $\sigma = 1.007310782$. We also set 
 $r=1.004$, approximately the average bank rate between 2018 - 2020.
-\section{Extensions to the Black-Scholes Model}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{sigmavalue.png}
+\end{figure}
+This shows how returns from options are far more consistent and safe with a low a low volatility,
+ like in the GameStop case. In the above case we have used the solution from \cite{wikipedia}, 
+ so the upper to sigma is $x>0$ so:
+\begin{align}
+    x =&& \ln{\frac{z}{K}} + (r - \frac{1}{2} \sigma^2)\tau > 0 && 
+    \text{with $\tau$, $x$ as defined in \cite{wikipedia}} \\
+    \sigma <&& \sqrt{\frac{2}{\tau} \ln{\frac{z}{K} + 2r}} && \approx 1.435
+\end{align}
 
 \section{Conclusion}
 

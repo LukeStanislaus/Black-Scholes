@@ -291,6 +291,32 @@
       \endverb
       \keyw{shares}
     \endentry
+    \entry{wikipedia}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{%
+           family={Wikipedia},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 18.04.2022)}
+      \field{title}{BlackScholes equation}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_equation
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_equation
+      \endverb
+      \keyw{wikipedia,blackscholes}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
