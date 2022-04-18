@@ -101,6 +101,34 @@
       \endverb
       \keyw{options}
     \endentry
+    \entry{nyse}{online}{}
+      \name{author}{1}{}{%
+        {{hash=362b318ad334c835a2050485659be1a7}{%
+           family={Exchange},
+           familyi={E\bibinitperiod},
+           given={New\bibnamedelimb York\bibnamedelima Stock},
+           giveni={N\bibinitperiod\bibinitdelim Y\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{362b318ad334c835a2050485659be1a7}
+      \strng{fullhash}{362b318ad334c835a2050485659be1a7}
+      \strng{bibnamehash}{362b318ad334c835a2050485659be1a7}
+      \strng{authorbibnamehash}{362b318ad334c835a2050485659be1a7}
+      \strng{authornamehash}{362b318ad334c835a2050485659be1a7}
+      \strng{authorfullhash}{362b318ad334c835a2050485659be1a7}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 18.04.2022)}
+      \field{title}{GAMESTOP CORPORATION GME}
+      \verb{urlraw}
+      \verb https://www.nyse.com/quote/XNYS:GME/QUOTE
+      \endverb
+      \verb{url}
+      \verb https://www.nyse.com/quote/XNYS:GME/QUOTE
+      \endverb
+      \keyw{nyse,gamestop}
+    \endentry
     \entry{SDE}{online}{}
       \name{author}{1}{}{%
         {{hash=aba73ed000314fec04f1aa1ae26bac88}{%

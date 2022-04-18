@@ -1,15 +1,15 @@
 # Fdb version 3
-["biber Black-Scholes"] 1650283563 "Black-Scholes.bcf" "Black-Scholes.bbl" "Black-Scholes" 1650283598
-  "Black-Scholes.bcf" 1650283597 107656 d742087709718fd8c67d392e858e3719 "pdflatex"
-  "Black-Scholes.bib" 1650279430 3373 b9b4303746b91162fedb113b83e4e772 ""
+["biber Black-Scholes"] 1650290276 "Black-Scholes.bcf" "Black-Scholes.bbl" "Black-Scholes" 1650290458
+  "Black-Scholes.bcf" 1650290457 107703 a1e09b42e17f80dae70ee8c13bf245b5 "pdflatex"
+  "Black-Scholes.bib" 1650290275 3603 ddfd7e663826f0d0fa985a756e9ecf77 ""
   (generated)
   "Black-Scholes.bbl"
   "Black-Scholes.blg"
-["pdflatex"] 1650283595 "c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex" "Black-Scholes.pdf" "Black-Scholes" 1650283598
-  "Black-Scholes.aux" 1650283597 7192 9050b005255950bf98a15e2189830ac8 "pdflatex"
-  "Black-Scholes.bbl" 1650283566 11149 b166caeba60e1d9f32ecd596348dc8ed "biber Black-Scholes"
-  "Black-Scholes.run.xml" 1650283597 2371 b5b62c77f54db160a924a13a73cf37d1 "pdflatex"
-  "Black-Scholes.tex" 1650283594 24130 84bd73f52c115350df10a03b948ce810 ""
+["pdflatex"] 1650290456 "c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex" "Black-Scholes.pdf" "Black-Scholes" 1650290458
+  "Black-Scholes.aux" 1650290457 7338 433c3ecfc26ea211da45ec560f592c44 "pdflatex"
+  "Black-Scholes.bbl" 1650290279 12356 30cb8d6b76b2642d278ca0b15cf047f5 "biber Black-Scholes"
+  "Black-Scholes.run.xml" 1650290457 2371 b5b62c77f54db160a924a13a73cf37d1 "pdflatex"
+  "Black-Scholes.tex" 1650290454 25325 37d4c944a7e56951d5f46a660e0e163f ""
   "C:/Users/lukes/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1650044950 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/lukes/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1650229554 12668 0d623a68babb1bf318732a6297ed2fdb ""
   "C:/Users/lukes/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1639614967 9769968 dd723f8b782397ac08636b9ad3cf7474 ""
@@ -117,7 +117,7 @@
   "C:/Users/lukes/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1636713860 12694 6c23725d50ab9d1e2d3ce482c58ffcf3 ""
   "C:/Users/lukes/AppData/Local/Programs/MiKTeX/tex/latex/tools/verbatim.sty" 1636713860 7392 39729ae6a807e217edf1442cf8fab2c2 ""
   "C:/Users/lukes/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex" 1650283594 24130 84bd73f52c115350df10a03b948ce810 ""
+  "c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex" 1650290454 25325 37d4c944a7e56951d5f46a660e0e163f ""
   "images//gamestopprice.png" 1650232286 11268 f6f0395522a7aabf43587f6c6f6c0935 ""
   "images//shortinterest.png" 1650232318 39628 a8ca80f309bebf07bd2c938d61780e5e ""
   "images//shortsqueeze.png" 1650232582 66498 4b95c247fe28b4afe71a9ba285a525f7 ""

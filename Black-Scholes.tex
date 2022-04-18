@@ -374,6 +374,7 @@ then
     \sum_k (\ln{S(t_{k+1}) - \ln{S(t_k)}})^2 \approx \sigma^2 t\\
     \implies
     \sigma = \sqrt{\frac{1}{2}\sum_k (\ln{\frac{S(t_{k+1})}{S(t_k)}})^2}
+    \label{volatilityapprox}
 \end{align}
 which is a much better estimate of the volatility coefficient, and is described as the 
 sample volatility.
@@ -496,7 +497,7 @@ we have the boundary condition
 We have finally reached the general Black-Scholes inital value boundary problem
 
 \begin{align}
-    u(t,z) +\frac{1}{2}\sigma^2z^2u_{zz}(t,z) + rzu_z(t,z) - ru(t,z) = 0 &&
+    u_t(t,z) +\frac{1}{2}\sigma^2z^2u_{zz}(t,z) + rzu_z(t,z) - ru(t,z) = 0 &&
     \text{for $(t,z) \in (0,T) \times \mathbb{R}_+ $}\\
     \text{with initial condition: } && u(0,z) = \max{(z-K, 0)} \text{, } 
     z \in \mathbb{R}_+ \\
@@ -526,10 +527,30 @@ to \ref{boundarycondition} we have
 \begin{align}
     C(t, 0) = 0 &&\text{for } t \in (0,T)
 \end{align}
-Then for $z \to \infty$
+Then for $z \to \infty$, again we can ignore out max. However, in this case, we must 
+purchase the stock and hold on to it until the exercise date, as we have a 
+european option. This money spent on the stock could otherwise be put in a 
+money market account, so the profit from exercising the option must account for this.
+From \ref{riskfree solution}, we get that 
+\begin{align}
+    C(t,z) = z - Ke^{-r(T-t)} &&\text{as } z \to \infty
+\end{align}
+We then finally get the following, the Black-Scholes European Call option IBVP:
+
+\begin{align}
+    u_t(t,z) +\frac{1}{2}\sigma^2z^2u_{zz}(t,z) + rzu_z(t,z) - ru(t,z) = 0 &&
+    \text{for $(t,z) \in (0,T) \times \mathbb{R}_+ $}\\
+    \text{with initial condition: } && u(0,z) = \max{(z-K, 0)} \text{, } 
+    z \in \mathbb{R}_+ \\
+    \text{and boundary conditions: } && u(t, 0) = 0 \text{,  $u(t,z) = 
+    z - Ke^{-r(T-t)}$ as $z \to \infty $,  $t \in [0,T]$}
+\end{align}
 
 \section{Modelling GameStop}
-
+We begin by using \ref{volatilityapprox} a calculate a value of $sigma$. Using data from 
+\cite{nyse} between 2018 - 2020, in the attached excel book we 
+calculate $\sigma = 1.007310782$. We also set 
+$r=1.004$, approximately the average bank rate between 2018 - 2020.
 \section{Extensions to the Black-Scholes Model}
 
 \section{Conclusion}
