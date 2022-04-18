@@ -1,15 +1,15 @@
 # Fdb version 3
-["biber Black-Scholes"] 1650312171 "Black-Scholes.bcf" "Black-Scholes.bbl" "Black-Scholes" 1650312350
-  "Black-Scholes.bcf" 1650312350 108171 85494118298abc444f889d016a185419 "pdflatex"
+["biber Black-Scholes"] 1650319456 "Black-Scholes.bcf" "Black-Scholes.bbl" "Black-Scholes" 1650321277
+  "Black-Scholes.bcf" 1650321276 108171 85494118298abc444f889d016a185419 "pdflatex"
   "Black-Scholes.bib" 1650311374 3849 f6c0f7597b7bb4fdc026f5fc85ba1e6a ""
   (generated)
   "Black-Scholes.bbl"
   "Black-Scholes.blg"
-["pdflatex"] 1650312348 "c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex" "Black-Scholes.pdf" "Black-Scholes" 1650312350
-  "Black-Scholes.aux" 1650312350 7732 8b1a3acbd20189acf8f29e8770115122 "pdflatex"
-  "Black-Scholes.bbl" 1650312174 13453 f6e3e5472eb1627b1841341b7f8f999f "biber Black-Scholes"
-  "Black-Scholes.run.xml" 1650312350 2371 b5b62c77f54db160a924a13a73cf37d1 "pdflatex"
-  "Black-Scholes.tex" 1650312267 25857 ad21cb9dd15ba829ae30b737e424c383 ""
+["pdflatex"] 1650321274 "c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex" "Black-Scholes.pdf" "Black-Scholes" 1650321277
+  "Black-Scholes.aux" 1650321276 7819 a76ae470f43c6eae14548a40af3924d2 "pdflatex"
+  "Black-Scholes.bbl" 1650319459 13453 f6e3e5472eb1627b1841341b7f8f999f "biber Black-Scholes"
+  "Black-Scholes.run.xml" 1650321276 2371 b5b62c77f54db160a924a13a73cf37d1 "pdflatex"
+  "Black-Scholes.tex" 1650321273 27463 9d98f9d2133ce3cb72a6706cdcf1940a ""
   "C:/Users/lukes/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1650044950 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/lukes/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1650229554 12668 0d623a68babb1bf318732a6297ed2fdb ""
   "C:/Users/lukes/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1639614967 9769968 dd723f8b782397ac08636b9ad3cf7474 ""
@@ -51,6 +51,7 @@
   "C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
+  "C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1247596667 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1247596666 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb" 1247596666 24393 3b7eb51a67a0a62aec5849271bdb9c2e ""
@@ -117,12 +118,14 @@
   "C:/Users/lukes/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1636713860 12694 6c23725d50ab9d1e2d3ce482c58ffcf3 ""
   "C:/Users/lukes/AppData/Local/Programs/MiKTeX/tex/latex/tools/verbatim.sty" 1636713860 7392 39729ae6a807e217edf1442cf8fab2c2 ""
   "C:/Users/lukes/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex" 1650312267 25857 ad21cb9dd15ba829ae30b737e424c383 ""
+  "c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex" 1650321273 27463 9d98f9d2133ce3cb72a6706cdcf1940a ""
   "images//gamestopprice.png" 1650232286 11268 f6f0395522a7aabf43587f6c6f6c0935 ""
   "images//shortinterest.png" 1650232318 39628 a8ca80f309bebf07bd2c938d61780e5e ""
   "images//shortsqueeze.png" 1650232582 66498 4b95c247fe28b4afe71a9ba285a525f7 ""
   "images//volkswagen.jpg" 1650230275 27442 279b35d2dc71c85b78beec9601cfd5d0 ""
-  "sigmavalue.png" 1650312347 68584 21deabbd0fff83bdcb304a7cf4a58323 ""
+  "kvalue.png" 1650320672 83840 b063d97c33d1283405677430e4159092 ""
+  "sigmavalue.png" 1650320671 75920 37a0838e9b39181b91ed525faf221565 ""
+  "tauvalue.png" 1650320673 105358 0195a1dc7823684c715e6c92a664d213 ""
   (generated)
   "Black-Scholes.aux"
   "Black-Scholes.bcf"

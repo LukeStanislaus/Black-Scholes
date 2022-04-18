@@ -552,21 +552,56 @@ We begin by using \ref{volatilityapprox} a calculate a value of $\sigma$. Using 
 \cite{nyse} between 2018 - 2020, in the attached excel book we 
 calculate $\sigma = 1.007310782$. We also set 
 $r=1.004$, approximately the average bank rate between 2018 - 2020.
-\begin{figure}[h]
+\begin{figure}[h] 
     \centering
-    \includegraphics[width=0.5\textwidth]{sigmavalue.png}
+    \includegraphics[width=0.5\textwidth]{sigmavalue.png} 
+    \caption[]{}
+    \label{sigmavalue}
 \end{figure}
-This shows how returns from options are far more consistent and safe with a low a low volatility,
+\ref{sigmavalue} shows how returns from options are far more consistent and safe with a low a low volatility,
  like in the GameStop case. In the above case we have used the solution from \cite{wikipedia}, 
  so the upper to sigma is $x>0$ so:
 \begin{align}
     x =&& \ln{\frac{z}{K}} + (r - \frac{1}{2} \sigma^2)\tau > 0 && 
     \text{with $\tau$, $x$ as defined in \cite{wikipedia}} \\
-    \sigma <&& \sqrt{\frac{2}{\tau} \ln{\frac{z}{K} + 2r}} && \approx 1.435
+    \implies |\sigma| <&& \sqrt{\frac{2}{\tau} \ln{\frac{z}{K} + 2r}} && \approx 1.435
 \end{align}
-
+Modifying values of K, the strike price, we see in \ref{kvalue} the increased risk 
+of buying options with a more expensive strike price, which makes sense - if 
+the strike of an option is near the current price, it is more likely that 
+the stock drops below this and so expires worthless.
+\begin{figure}[h] 
+    \centering
+    \includegraphics[width=0.5\textwidth]{kvalue.png} 
+    \caption[]{}
+    \label{kvalue}
+\end{figure}
+Again here we have a mathematical limit on the value of k:
+\begin{align}
+    \ln{\frac{z}{K}} + (r - \frac{1}{2} \sigma^2)\tau > 0 \\
+    \implies |k| < ze^{\frac{1}{2}\sigma^2 - r} \approx 12.171166822082068
+\end{align}
+We finish with an analysis for different values of $\tau$, where we notice that 
+the time to expiry has no effect on the distribution of $u$, the value of the 
+option.
+\begin{figure}[h] 
+    \centering
+    \includegraphics[width=0.5\textwidth]{tauvalue.png} 
+    \caption[]{}
+    \label{tauvalue}
+\end{figure}
+\begin{align}
+    \ln{\frac{z}{K}} + (r - \frac{1}{2} \sigma^2)\tau > 0 \\
+    \implies |\tau| > \frac{\ln{\frac{K}{z}}}{r - \frac{1}{2}\sigma^2} 
+    \approx -0.0510&& \text{although note that time is 
+    defined to be nonegative.}
+\end{align}
 \section{Conclusion}
-
+In conclusion, it is apparent that GameStop was an extremely safe investment 
+for these hedge funds - with low volatity and and slow decline, these head 
+funds could gain millions in low risk money of the period of many years, which 
+is how it ended up gaining such a massive short interest which allowed the 
+squeeze to occur so easily.
 \printbibliography %Prints bibliography
 \end{document}
 

@@ -1,7 +1,7 @@
 import numpy as np
 import math
 import matplotlib.pyplot as plt
-from scipy.stats import kde
+from scipy import stats
 def blackscholes(r,sigma,K,S,normn,tau):
     x = math.log(S/K) + (r - 1/2*math.pow(sigma,2))*tau
     d1 = np.random.normal(0, (1/(sigma * math.sqrt(tau)))*
@@ -15,7 +15,7 @@ def blackscholes(r,sigma,K,S,normn,tau):
     for i in range(normn):
         data[i] =u(x, tau, d1[i], d2[i])/math.pow(math.e, r*tau)
 
-    density = kde.gaussian_kde(data)
+    density = stats.gaussian_kde(data)
     x = np.linspace(-100,100,300)
     y=density(x)
     return (x,y)
@@ -30,35 +30,37 @@ S=20
 normn= 10000
 tau = 1
 maxsigma = math.sqrt(((2/tau)*math.log(S/K) + 2*r))
-sigmaplot= 0
-for i in range(10,100, 10):
+handles= [0]*10
+for i in range(10,110, 10):
     sigmaVar= maxsigma*i/100
     x = math.log(S/K) + (r - 1/2*math.pow(0,2))
     (x,y) = blackscholes(r, sigmaVar, K, S, normn, tau)
-    
-    if(i==10 or 100):
-        sigmaplot = plt.plot(x, y, str(i/100), label=("sigma = " + str(sigmaVar)))
-
-    else:
-        sigmaplot = plt.plot(x, y, str(i/100))
+    handles[int(i/10 -1)], = plt.plot(x, y, str(i/100), label="sigma =" +str(round(sigmaVar,2)))
     # increasing sigma = more white
     
     plt.title("Density Plot of C with different values of sigma")
-plt.legend(["sigma=0", "sigma= "+str(maxsigma)])
+plt.legend(handles = handles)
 plt.savefig("sigmavalue.png")
-plt.show()
+maxK = S * math.pow(math.e, (1/2)* math.pow(sigma, 2) - r)
+for i in range(10,110, 10):
+    kVar=maxK * i/100
+    (x,y) = blackscholes(r, sigma, kVar, S, normn, tau)
 
-for i in range(10,100, 10):
-    (x,y) = blackscholes(r, sigma, i, S, normn, tau)
-    
-    if(i==10 or 100):
-        sigmaplot = plt.plot(x, y, str(i/100), label=("k = " + str(i)))
+    handles[int(i/10 -1)], = plt.plot(x, y, str(i/100), label="k = "+ str(round(kVar,2)))
 
-    else:
-        sigmaplot = plt.plot(x, y, str(i/100))
-    # increasing sigma = more white
-    
+
     plt.title("Density Plot of C with different values of k")
-plt.legend(["k=0", "k= "+str(100)])
+plt.legend(handles = handles)
 plt.savefig("kvalue.png")
-plt.show()
+maxTau = (math.log(K/S,math.e))/(r-1/2*math.pow(sigma,2))
+print(maxTau)
+for i in range(10,110, 10):
+    tauVar=abs(maxTau * i)
+    (x,y) = blackscholes(r, sigma, K, S, normn, tauVar)
+
+    handles[int(i/10 -1)], = plt.plot(x, y, str(i/100), label="tau = "+ str(round(tauVar,2)))
+
+
+    plt.title("Density Plot of C with different values of tau")
+plt.legend(handles = handles)
+plt.savefig("tauvalue.png")
