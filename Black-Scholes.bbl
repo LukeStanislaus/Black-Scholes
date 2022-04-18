@@ -19,6 +19,34 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{scholesapplication}{online}{}
+      \name{author}{1}{}{%
+        {{hash=7473a728828f5060bb66a5bfb2a86f7e}{%
+           family={A.\bibnamedelimi S.\bibnamedelimi Shinde},
+           familyi={A\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={K.\bibnamedelimi C.\bibnamedelimi Takale},
+           giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{7473a728828f5060bb66a5bfb2a86f7e}
+      \strng{fullhash}{7473a728828f5060bb66a5bfb2a86f7e}
+      \strng{bibnamehash}{7473a728828f5060bb66a5bfb2a86f7e}
+      \strng{authorbibnamehash}{7473a728828f5060bb66a5bfb2a86f7e}
+      \strng{authornamehash}{7473a728828f5060bb66a5bfb2a86f7e}
+      \strng{authorfullhash}{7473a728828f5060bb66a5bfb2a86f7e}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 18.04.2022)}
+      \field{title}{Study of Black-Scholes and its applications}
+      \verb{urlraw}
+      \verb https://pdf.sciencedirectassets.com/278653/1-s2.0-S1877705812X00183/1-s2.0-S1877705812019480/main.pdf
+      \endverb
+      \verb{url}
+      \verb https://pdf.sciencedirectassets.com/278653/1-s2.0-S1877705812X00183/1-s2.0-S1877705812019480/main.pdf
+      \endverb
+      \keyw{blackscholes,application}
+    \endentry
     \entry{quadtraticvariation}{online}{}
       \name{author}{1}{}{%
         {{hash=4e8a406999de17a6fff7f67c9c707c8e}{%

@@ -2358,6 +2358,7 @@
     <bcf:citekey order="12">quadtraticvariation</bcf:citekey>
     <bcf:citekey order="13">blackscholes</bcf:citekey>
     <bcf:citekey order="14">blackscholes</bcf:citekey>
+    <bcf:citekey order="15">scholesapplication</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

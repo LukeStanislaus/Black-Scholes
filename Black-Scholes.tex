@@ -130,7 +130,7 @@ by buying the stock off the open market they increase demand for the
 stock, increasing the price further, forcing other short sellers to 
 close their positions, driving the price up further. This is what is 
 known as a short squeeze.
-\paragraph{}
+\paragraph{}\label{typesofoption}
 There are also two types of options - a "european" and "american" 
 derivative security. An european option can only be exercised at the 
 strike date, while an american option can be exercised at any time up 
@@ -470,18 +470,63 @@ Finally, we use \ref{replicatingstrategy} and our expressions for $x$ and $y$ to
 \end{align}
 We now simply rearrange for $u_t(t,z)$:
 \begin{align}\label{blackscholes}
-    u_t(t,z) = -\frac{1}{2}\sigma^2x^2u_{zz}(t,z) - rzu_z(t,z) + ru(t,z) 
+    u_t(t,z) = -\frac{1}{2}\sigma^2z^2u_{zz}(t,z) - rzu_z(t,z) + ru(t,z) 
    && \text{for $0<t<T$, $z \in \mathbb{R}$.}
 \end{align}
 We also have the boundary condition that $H(T)$ is equal to the option payoff at the strike 
-date, in other words 
-\begin{align}
-    u(T,z) = \max{(z - K , 0)} && \text{for $z \in \mathbb{R}$}
+date, so in the case of a call option we can immediately buy the stock to lock in our profits, 
+so a $t=0$ we have
+\begin{align} \label{initialvalue}
+    u(0,z) = \max{(z - K , 0)} && \text{for $z \in \mathbb{R}$}
 \end{align}
-where $K$ is the strike price of the option. We use the $\max$ since there is no point exericsing 
-the option if the strike is above the market value. 
+where $K$ is the strike price of the option. We use the $\max$ since the option has no value 
+if the strike is above the market value. We can then consider when $z=0$ and 
+$z \to \infty$, as in \cite{scholesapplication}. When $z=0$ we notice from \ref{riskyasset} 
+that $\mathrm{d}S = 0$ so $z = 0$ is constant and
+\begin{equation} \label{boundarycondition}
+    u(t,0) = 0.
+\end{equation}
+As $z \to \infty$, it becomes more likely we exercise the option, and the strike price 
+becomes less relevant to $u$, so the value of $u(t,Z)$ is equivalent to $z$. Therefore 
+we have the boundary condition 
+\begin{align} 
+    u(t,z) = z && \text{as $z \to \infty$}
+\end{align}
 
+We have finally reached the general Black-Scholes inital value boundary problem
+
+\begin{align}
+    u(t,z) +\frac{1}{2}\sigma^2z^2u_{zz}(t,z) + rzu_z(t,z) - ru(t,z) = 0 &&
+    \text{for $(t,z) \in (0,T) \times \mathbb{R}_+ $}\\
+    \text{with initial condition: } && u(0,z) = \max{(z-K, 0)} \text{, } 
+    z \in \mathbb{R}_+ \\
+    \text{and boundary conditions: } && u(t, 0) = 0 \text{,  $u(t,z) = z$ as 
+    $S \to \infty $,  $t \in [0,T]$}
+\end{align}
+Where we remember that: 
+\begin{align}
+    u(t,z) - && \text{price of the option}\\
+    z - && \text{price of the underlying stock}\\
+    K - && \text{strike price of the option}\\
+    r - && \text{annualized risk-free interest rate, continouusly compounded}\\
+    t - && \text{time, generally in years, with now as $t=0$ and expiry $t=T$}\\
+    \sigma - && \text{the volatility of the underlying stock}
+\end{align}
 \section{The Black-Scholes Model}
+Now we have derived and fully defined our model, we may consider final and boundary 
+conditions of a European Call, as defined in \ref{typesofoption}. We define this as 
+$C(t,z)$, with exercise price $K$ and expiry date $T$ from above. Now for the final 
+condition $t=T$ we appeal to the definition of a call as in \ref{initialvalue}:
+\begin{equation}
+    C(T, z) = \max{(z-K, 0)}
+\end{equation}
+
+Now for our boundary conditions again we consider $u$ for $z=0$ and $z \to \infty$. Simiarly 
+to \ref{boundarycondition} we have 
+\begin{align}
+    C(t, 0) = 0 &&\text{for } t \in (0,T)
+\end{align}
+Then for $z \to \infty$
 
 \section{Modelling GameStop}
 
@@ -491,3 +536,4 @@ the option if the strike is above the market value.
 
 \printbibliography %Prints bibliography
 \end{document}
+
