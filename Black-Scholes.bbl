@@ -129,6 +129,32 @@
       \endverb
       \keyw{nyse,gamestop}
     \endentry
+    \entry{optionsderivatives}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ceecd71c7d27182f0b52772476b8cc16}{%
+           family={Hull},
+           familyi={H\bibinitperiod},
+           given={John\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{ceecd71c7d27182f0b52772476b8cc16}
+      \strng{fullhash}{ceecd71c7d27182f0b52772476b8cc16}
+      \strng{bibnamehash}{ceecd71c7d27182f0b52772476b8cc16}
+      \strng{authorbibnamehash}{ceecd71c7d27182f0b52772476b8cc16}
+      \strng{authornamehash}{ceecd71c7d27182f0b52772476b8cc16}
+      \strng{authorfullhash}{ceecd71c7d27182f0b52772476b8cc16}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781292212890}
+      \field{title}{Options, Futures and Other Derivatives}
+      \field{year}{2018}
+      \keyw{options,futures}
+    \endentry
     \entry{SDE}{online}{}
       \name{author}{1}{}{%
         {{hash=aba73ed000314fec04f1aa1ae26bac88}{%

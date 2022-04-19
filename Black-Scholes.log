@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2021.12.15)  18 APR 2022 23:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2021.12.15)  19 APR 2022 13:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -311,123 +311,156 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count388
 \@lastruleclass=\count389
 \@thisrulewidth=\dimen161
+) (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2021/11/29 3.67 The Babel package
+\babel@savecnt=\count390
+\U@D=\dimen162
+\l@unhyphenated=\language80
+ (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read3
+\bbl@dirlevel=\count391
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 108.
+)) (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks20
+\thm@bodyfont=\toks21
+\thm@headfont=\toks22
+\thm@notefont=\toks23
+\thm@headpunct=\toks24
+\thm@preskip=\skip71
+\thm@postskip=\skip72
+\thm@headsep=\skip73
+\dth@everypar=\toks25
 ) (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2021/10/15 v2.17l AMS math features
-\@mathmargin=\skip71
+\@mathmargin=\skip74
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
  (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks20
-\ex@=\dimen162
+\@emptytoks=\toks26
+\ex@=\dimen163
 )) (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen163
+\pmbraise@=\dimen164
 ) (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2021/08/26 v2.02 operator names
 )
-\inf@bad=\count390
+\inf@bad=\count392
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count391
-\leftroot@=\count392
+\uproot@=\count393
+\leftroot@=\count394
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count393
-\DOTSCASE@=\count394
+\classnum@=\count395
+\DOTSCASE@=\count396
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
 \Mathstrutbox@=\box50
 \strutbox@=\box51
-\big@size=\dimen164
+\big@size=\dimen165
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count395
-\c@MaxMatrixCols=\count396
+\macc@depth=\count397
+\c@MaxMatrixCols=\count398
 \dotsspace@=\muskip21
-\c@parentequation=\count397
-\dspbrk@lvl=\count398
-\tag@help=\toks21
-\row@=\count399
-\column@=\count400
-\maxfields@=\count401
-\andhelp@=\toks22
-\eqnshift@=\dimen165
-\alignsep@=\dimen166
-\tagshift@=\dimen167
-\tagwidth@=\dimen168
-\totwidth@=\dimen169
-\lineht@=\dimen170
-\@envbody=\toks23
-\multlinegap=\skip72
-\multlinetaggap=\skip73
-\mathdisplay@stack=\toks24
+\c@parentequation=\count399
+\dspbrk@lvl=\count400
+\tag@help=\toks27
+\row@=\count401
+\column@=\count402
+\maxfields@=\count403
+\andhelp@=\toks28
+\eqnshift@=\dimen166
+\alignsep@=\dimen167
+\tagshift@=\dimen168
+\tagwidth@=\dimen169
+\totwidth@=\dimen170
+\lineht@=\dimen171
+\@envbody=\toks29
+\multlinegap=\skip75
+\multlinetaggap=\skip76
+\mathdisplay@stack=\toks30
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
 ) (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen171
+\col@sep=\dimen172
 \ar@mcellbox=\box52
-\extrarowheight=\dimen172
-\NC@list=\toks25
-\extratabsurround=\skip74
-\backup@length=\skip75
+\extrarowheight=\dimen173
+\NC@list=\toks31
+\extratabsurround=\skip77
+\backup@length=\skip78
 \ar@cellbox=\box53
 ) (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/paralist\paralist.sty
 Package: paralist 2017/01/22 v2.7 Extended list environments
-\pltopsep=\skip76
-\plpartopsep=\skip77
-\plitemsep=\skip78
-\plparsep=\skip79
-\pl@lab=\toks26
+\pltopsep=\skip79
+\plpartopsep=\skip80
+\plitemsep=\skip81
+\plparsep=\skip82
+\pl@lab=\toks32
 ) (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks27
-\verbatim@line=\toks28
-\verbatim@in@stream=\read3
+\every@verbatim=\toks33
+\verbatim@line=\toks34
+\verbatim@in@stream=\read4
 ) (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
  (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
  (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen173
-\captionmargin@=\dimen174
-\captionwidth=\dimen175
-\caption@tempdima=\dimen176
-\caption@indent=\dimen177
-\caption@parindent=\dimen178
-\caption@hangindent=\dimen179
+\captionmargin=\dimen174
+\captionmargin@=\dimen175
+\captionwidth=\dimen176
+\caption@tempdima=\dimen177
+\caption@indent=\dimen178
+\caption@parindent=\dimen179
+\caption@hangindent=\dimen180
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count402
-\c@continuedfloat=\count403
+\c@caption@flags=\count404
+\c@continuedfloat=\count405
 )
-\c@KVtest=\count404
-\sf@farskip=\skip80
-\sf@captopadj=\dimen180
-\sf@capskip=\skip81
-\sf@nearskip=\skip82
-\c@subfigure=\count405
-\c@subfigure@save=\count406
-\c@lofdepth=\count407
-\c@subtable=\count408
-\c@subtable@save=\count409
-\c@lotdepth=\count410
-\sf@top=\skip83
-\sf@bottom=\skip84
+\c@KVtest=\count406
+\sf@farskip=\skip83
+\sf@captopadj=\dimen181
+\sf@capskip=\skip84
+\sf@nearskip=\skip85
+\c@subfigure=\count407
+\c@subfigure@save=\count408
+\c@lofdepth=\count409
+\c@subtable=\count410
+\c@subtable@save=\count411
+\c@lotdepth=\count412
+\sf@top=\skip86
+\sf@bottom=\skip87
 ) (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip85
-\f@nch@O@elh=\skip86
-\f@nch@O@erh=\skip87
-\f@nch@O@olh=\skip88
-\f@nch@O@orh=\skip89
-\f@nch@O@elf=\skip90
-\f@nch@O@erf=\skip91
-\f@nch@O@olf=\skip92
-\f@nch@O@orf=\skip93
+\f@nch@headwidth=\skip88
+\f@nch@O@elh=\skip89
+\f@nch@O@erh=\skip90
+\f@nch@O@olh=\skip91
+\f@nch@O@orh=\skip92
+\f@nch@O@elf=\skip93
+\f@nch@O@erf=\skip94
+\f@nch@O@olf=\skip95
+\f@nch@O@orf=\skip96
 ) (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/sectsty\sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
 
@@ -456,69 +489,74 @@ Package tocbibind Note: Using section or other style headings.
 ) (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 51.
-\cftparskip=\skip94
-\cftbeforetoctitleskip=\skip95
-\cftaftertoctitleskip=\skip96
-\cftbeforepartskip=\skip97
-\cftpartnumwidth=\skip98
-\cftpartindent=\skip99
-\cftbeforesecskip=\skip100
-\cftsecindent=\skip101
-\cftsecnumwidth=\skip102
-\cftbeforesubsecskip=\skip103
-\cftsubsecindent=\skip104
-\cftsubsecnumwidth=\skip105
-\cftbeforesubsubsecskip=\skip106
-\cftsubsubsecindent=\skip107
-\cftsubsubsecnumwidth=\skip108
-\cftbeforeparaskip=\skip109
-\cftparaindent=\skip110
-\cftparanumwidth=\skip111
-\cftbeforesubparaskip=\skip112
-\cftsubparaindent=\skip113
-\cftsubparanumwidth=\skip114
-\cftbeforeloftitleskip=\skip115
-\cftafterloftitleskip=\skip116
-\cftbeforefigskip=\skip117
-\cftfigindent=\skip118
-\cftfignumwidth=\skip119
-\cftbeforelottitleskip=\skip120
-\cftafterlottitleskip=\skip121
-\cftbeforetabskip=\skip122
-\cfttabindent=\skip123
-\cfttabnumwidth=\skip124
-\cftbeforesubfigskip=\skip125
-\cftsubfigindent=\skip126
-\cftsubfignumwidth=\skip127
-\cftbeforesubtabskip=\skip128
-\cftsubtabindent=\skip129
-\cftsubtabnumwidth=\skip130
+\cftparskip=\skip97
+\cftbeforetoctitleskip=\skip98
+\cftaftertoctitleskip=\skip99
+\cftbeforepartskip=\skip100
+\cftpartnumwidth=\skip101
+\cftpartindent=\skip102
+\cftbeforesecskip=\skip103
+\cftsecindent=\skip104
+\cftsecnumwidth=\skip105
+\cftbeforesubsecskip=\skip106
+\cftsubsecindent=\skip107
+\cftsubsecnumwidth=\skip108
+\cftbeforesubsubsecskip=\skip109
+\cftsubsubsecindent=\skip110
+\cftsubsubsecnumwidth=\skip111
+\cftbeforeparaskip=\skip112
+\cftparaindent=\skip113
+\cftparanumwidth=\skip114
+\cftbeforesubparaskip=\skip115
+\cftsubparaindent=\skip116
+\cftsubparanumwidth=\skip117
+\cftbeforeloftitleskip=\skip118
+\cftafterloftitleskip=\skip119
+\cftbeforefigskip=\skip120
+\cftfigindent=\skip121
+\cftfignumwidth=\skip122
+\cftbeforelottitleskip=\skip123
+\cftafterlottitleskip=\skip124
+\cftbeforetabskip=\skip125
+\cfttabindent=\skip126
+\cfttabnumwidth=\skip127
+\cftbeforesubfigskip=\skip128
+\cftsubfigindent=\skip129
+\cftsubfignumwidth=\skip130
+\cftbeforesubtabskip=\skip131
+\cftsubtabindent=\skip132
+\cftsubtabnumwidth=\skip133
 )
-\c@theorem=\count411
-\c@corollary=\count412
-\@quotelevel=\count413
-\@quotereset=\count414
- (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+\c@theorem=\count413
+\c@corollary=\count414
+
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count415
+\@quotereset=\count416
+(C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count415
+\l__color_backend_stack_int=\count417
 \l__pdf_internal_box=\box54
 ) (Black-Scholes.aux)
 \openout1 = `Black-Scholes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
@@ -545,21 +583,21 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Black-Scholes.bbl' found.
  (Black-Scholes.bbl)
-Package biblatex Info: Reference section=0 on input line 73.
-Package biblatex Info: Reference segment=0 on input line 73.
+Package biblatex Info: Reference section=0 on input line 76.
+Package biblatex Info: Reference segment=0 on input line 76.
  (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count416
-\scratchdimen=\dimen181
+\scratchcounter=\count418
+\scratchdimen=\dimen182
 \scratchbox=\box55
-\nofMPsegments=\count417
-\nofMParguments=\count418
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count419
-\MPscratchDim=\dimen182
-\MPnumerator=\count420
-\makeMPintoPDFobject=\count421
-\everyMPtoPDFconversion=\toks30
+\nofMPsegments=\count419
+\nofMParguments=\count420
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count421
+\MPscratchDim=\dimen183
+\MPnumerator=\count422
+\makeMPintoPDFobject=\count423
+\everyMPtoPDFconversion=\toks36
 ) (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -603,11 +641,11 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 75.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
 (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 75.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
  (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -616,72 +654,80 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <./images//volkswagen.jpg, id=10, 528.47438pt x 289.83281pt>
 File: ./images//volkswagen.jpg Graphic file (type jpg)
 <use ./images//volkswagen.jpg>
-Package pdftex.def Info: ./images//volkswagen.jpg  used on input line 154.
+Package pdftex.def Info: ./images//volkswagen.jpg  used on input line 157.
 (pdftex.def)             Requested size: 209.12683pt x 114.69276pt.
  [2 <./images//volkswagen.jpg>]
 <./images//gamestopprice.png, id=14, 410.2828pt x 179.92218pt>
 File: ./images//gamestopprice.png Graphic file (type png)
 <use ./images//gamestopprice.png>
-Package pdftex.def Info: ./images//gamestopprice.png  used on input line 169.
+Package pdftex.def Info: ./images//gamestopprice.png  used on input line 172.
 (pdftex.def)             Requested size: 313.69025pt x 137.56314pt.
 <./images//shortinterest.png, id=15, 542.77782pt x 318.43968pt>
 File: ./images//shortinterest.png Graphic file (type png)
 <use ./images//shortinterest.png>
-Package pdftex.def Info: ./images//shortinterest.png  used on input line 179.
+Package pdftex.def Info: ./images//shortinterest.png  used on input line 182.
 (pdftex.def)             Requested size: 209.12683pt x 122.68954pt.
 <./images//shortsqueeze.png, id=16, 377.91188pt x 321.45094pt>
 File: ./images//shortsqueeze.png Graphic file (type png)
 <use ./images//shortsqueeze.png>
-Package pdftex.def Info: ./images//shortsqueeze.png  used on input line 197.
+Package pdftex.def Info: ./images//shortsqueeze.png  used on input line 200.
 (pdftex.def)             Requested size: 209.12683pt x 177.88255pt.
- [3 <./images//gamestopprice.png> <./images//shortinterest.png>] [4 <./images//shortsqueeze.png>] [5] [6] [7] [8]
-Overfull \hbox (37.79416pt too wide) detected at line 506
+ [3 <./images//gamestopprice.png> <./images//shortinterest.png>] [4 <./images//shortsqueeze.png>] [5] [6] [7] [8] [9]
+Overfull \hbox (37.79416pt too wide) detected at line 560
 []
  []
 
-[9] [10]
+[10]
 <sigmavalue.png, id=52, 462.528pt x 346.896pt>
 File: sigmavalue.png Graphic file (type png)
 <use sigmavalue.png>
-Package pdftex.def Info: sigmavalue.png  used on input line 557.
+Package pdftex.def Info: sigmavalue.png  used on input line 611.
 (pdftex.def)             Requested size: 209.12683pt x 156.84808pt.
-<kvalue.png, id=54, 462.528pt x 346.896pt>
+ [11]
+<kvalue.png, id=57, 462.528pt x 346.896pt>
 File: kvalue.png Graphic file (type png)
 <use kvalue.png>
-Package pdftex.def Info: kvalue.png  used on input line 575.
+Package pdftex.def Info: kvalue.png  used on input line 629.
 (pdftex.def)             Requested size: 209.12683pt x 156.84808pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11 <./sigmavalue.png>]
-<tauvalue.png, id=59, 462.528pt x 346.896pt>
+<tauvalue.png, id=58, 462.528pt x 346.896pt>
 File: tauvalue.png Graphic file (type png)
 <use tauvalue.png>
-Package pdftex.def Info: tauvalue.png  used on input line 589.
+Package pdftex.def Info: tauvalue.png  used on input line 643.
 (pdftex.def)             Requested size: 209.12683pt x 156.84808pt.
- [12 <./kvalue.png> <./tauvalue.png>]
-Overfull \hbox (11.64552pt too wide) in paragraph at lines 606--606
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12 <./sigmavalue.png>] [13 <./kvalue.png> <./tauvalue.png>]
+Overfull \hbox (36.90096pt too wide) in paragraph at lines 660--660
+[]\OT1/cmr/m/n/10.95 John C. Hull. \OT1/cmr/m/it/10.95 Op-tions, Fu-tures and Other Deriva-tives\OT1/cmr/m/n/10.95 . Pear-son, 2018. \OT1/cmr/m/sc/10.95 isbn\OT1/cmr/m/n/10.95 : 9781292212890. 
+ []
+
+
+Overfull \hbox (11.64552pt too wide) in paragraph at lines 660--660
 []\OT1/cmr/m/n/10.95 Steven P. Lal-ley. \OT1/cmr/m/it/10.95 Stochas-tic Dif-fer-en-tial Equa-tions\OT1/cmr/m/n/10.95 . \OT1/cmr/m/sc/10.95 url\OT1/cmr/m/n/10.95 : $\OT1/cmtt/m/n/10.95 https : / / galton . uchicago .
  []
 
-[13] (Black-Scholes.aux)
+[14] (Black-Scholes.aux)
 Package logreq Info: Writing requests to 'Black-Scholes.run.xml'.
 \openout1 = `Black-Scholes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13075 strings out of 478659
- 245849 string characters out of 2845919
- 959709 words of memory out of 3000000
- 31028 multiletter control sequences out of 15000+600000
+ 14086 strings out of 478659
+ 263711 string characters out of 2845919
+ 989335 words of memory out of 3000000
+ 32019 multiletter control sequences out of 15000+600000
  415052 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,13n,79p,785b,1267s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,13n,79p,785b,1640s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\lukes\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Black-Scholes.pdf (13 pages, 570606 bytes).
+Output written on Black-Scholes.pdf (14 pages, 571926 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
+ 149 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

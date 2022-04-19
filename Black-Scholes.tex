@@ -30,6 +30,9 @@
 %%% PACKAGES
 %\usepackage{hyperef}
 \usepackage{booktabs} % for much better looking tables
+\usepackage[english]{babel}
+\usepackage{amsthm}
+
 \usepackage{amsmath}
 \usepackage{array} % for better arrays (eg matrices) in maths
 \usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
@@ -86,7 +89,7 @@
 
 \section{What are shares, options, and short selling?}
 \subsection{Shares}
-As defined in "Investopedia" \cite{shares}, shares are "units of equity 
+As defined in \cite{shares}, shares are "units of equity 
 ownership in a corporation." Writing shares is an effective way to raise 
 capital for a firm, as there is not legal mandate to be repaid to 
 investors, and to not pay interest. Common shares usually offer a voting 
@@ -104,8 +107,8 @@ at a predetermined price. In themselves, they are a form of asset and
 as such have their own valuations and market value. A "call" option 
 is when the writer of the option promises to sell the stock at a 
 predetermined price, called the "strike" at a predetermined time, 
-called the "strike date". This means that if you own a call option and 
-the stock price increases above the strike, the writer will still have 
+called the "exercise date". This means that if you own a call option and 
+the stock price increases above the strike price, the writer will still have 
 to honor the strike and so you can "exercise" the option 
 and immediately sell the stock, where your profit is the difference 
 between the strike and current price, less the cost of the option. 
@@ -133,8 +136,8 @@ known as a short squeeze.
 \paragraph{}\label{typesofoption}
 There are also two types of options - a "european" and "american" 
 derivative security. An european option can only be exercised at the 
-strike date, while an american option can be exercised at any time up 
-to the strike date. In this essay we shall only consider the simpler 
+exercise date, while an american option can be exercised at any time up 
+to the exercise date. In this essay we shall only consider the simpler 
 european option, although the american option is far more common in 
 the financial markets.
 
@@ -235,7 +238,7 @@ written as
     X_t = a(X_t, t)\mathrm{d}t + b(X_t, t)\mathrm{d}W_t
 \end{equation}
 or even 
-\begin{equation}
+\begin{equation} \label{itoprocess}
     X_t = a_t\mathrm{d}t + b_t\mathrm{d}W_t
 \end{equation}
 This converges at some time $T$ to Brownian motion with instantaneous drift $a_T$ and
@@ -263,6 +266,58 @@ As defined in \cite{itoprocess}, Ito's lemma is
     \end{equation}
     for $t\ge0$
 \end{lemma}
+\begin{proof}
+    Let $G$ be a continuous a differentiable function of variables $x, t$. 
+    Then by Taylor's Theorem we find
+    \begin{equation}\label{taylorG}
+        \Delta G = \frac{\delta G}{\delta x}\Delta x + 
+        \frac{\delta G}{\delta t}\Delta t + 
+        \frac{1}{2} \frac{\delta^2 G}{\delta x^2}\Delta x^2 + 
+        \frac{1}{2} \frac{\delta^2 G}{\delta t^2}\Delta t^2 + \dots
+    \end{equation}
+    which in the limit of $\Delta x, \Delta t \to 0$, \ref{taylorG} approaches
+
+    \begin{equation}\label{limitG}
+        \mathrm{d}G = \frac{\delta G}{\delta x}\mathrm{d}x + 
+        \frac{\delta G}{\delta t}\mathrm{d}t
+    \end{equation}
+    Now we consider \ref{limitG} to cover functions following Ito processes as 
+    in \ref{itoprocess}, i.e.
+
+    \begin{equation}\label{itoprocessG}
+        \mathrm{d}x = a(x,t)\mathrm{d}t + b(x,t)\mathrm{d}z
+    \end{equation}
+
+    and $G$ is a function of $x$ of time $t$. We can rewrite \ref{itoprocessG} 
+    as discrete variables:
+
+    \begin{align}
+        \Delta x = a\Delta t + b \epsilon \sqrt{\Delta t}
+         && \text{where $\epsilon \sim \mathcal{N}(0,1)$}
+    \end{align}
+using the definiton of a Wiener process, as defined in \cite{optionsderivatives}. 
+Then we have $\mathrm{E}(\epsilon^2) = 1$  and $\mathrm{E}(\epsilon^2  \Delta t) =
+ \Delta t$ and $\mathrm{Var}(\epsilon^2  \Delta t) = 2\Delta t ^2$. Since the variance 
+ is too small to have a stochastic component, we can treat $\Delta x ^2$ as nonstochastic 
+(or non-random) and drop the normal distribution, so we have 
+
+$$\Delta x^2 = b^2\Delta x.$$ 
+ then we are done: using \ref{limitG} 
+\begin{align}
+    \Delta G =&& \frac{\delta G}{\delta x} \mathrm{d} x + 
+    \frac{\delta G}{\delta t} \mathrm{d} t + 
+    \frac{1}{2} \frac{\delta^2 G}{\delta x^2} \mathrm{d} x^2 + 
+    \frac{1}{2} \frac{\delta^2 G}{\delta t^2} \mathrm{d} t^2 + \dots \approx \\
+    =&& \frac{\delta G}{\delta x} \mathrm{d} x + 
+    \frac{\delta G}{\delta t} \mathrm{d} t + 
+    \frac{1}{2} \frac{\delta^2 G}{\delta x^2} b^2 \mathrm{d} x\\
+    =&& \bigg(\frac{\delta G}{\delta x}a+ \frac{\delta G}{\delta t} + \frac{1}{2} 
+    \frac{\delta^2 G}{\delta x^2} b^2 \bigg)\mathrm{d}t + \frac{\delta G}{\delta x} 
+    b \mathrm{d}z
+\end{align}
+This completes our proof of Ito's lemma.
+\end{proof}
+
 We shall also require Ito's existence/uniqueness theorem, as defined in 
 \cite{SDE}:
 
@@ -273,11 +328,10 @@ We shall also require Ito's existence/uniqueness theorem, as defined in
     \ref{randomprocess} has "strong solutions". This means that for any standard 
     Brownian motion $\{W_t\}_{t\geq0}$, any admissable filtration $\mathbb{F} = 
     \{\mathcal{F}_t\}$ and any initial value $x \in \mathbb{R}$ there exists a 
-    unique proccess $X_t = X_t^x$ which solves \ref{randomprocess}.
+    unique proccess $X_t = X_t^x$ which solves \ref{randomprocess}. 
 
     
 \end{theorem}
-
 \subsection{A risky asset}
 
 A risk asset, as defined in The Black-Scholes Model \cite{blackscholes}, 
@@ -474,7 +528,7 @@ We now simply rearrange for $u_t(t,z)$:
     u_t(t,z) = -\frac{1}{2}\sigma^2z^2u_{zz}(t,z) - rzu_z(t,z) + ru(t,z) 
    && \text{for $0<t<T$, $z \in \mathbb{R}$.}
 \end{align}
-We also have the boundary condition that $H(T)$ is equal to the option payoff at the strike 
+We also have the boundary condition that $H(T)$ is equal to the option payoff at the exercise 
 date, so in the case of a call option we can immediately buy the stock to lock in our profits, 
 so a $t=0$ we have
 \begin{align} \label{initialvalue}
