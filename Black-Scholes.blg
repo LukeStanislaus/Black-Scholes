@@ -1,0 +1,5 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'Black-Scholes.blg'
+[127] biber-MSWIN64:340> INFO - === 
+[174] Utils.pm:411> ERROR - Black-Scholes.bcf is malformed, last biblatex run probably failed. Deleted Black-Scholes.bbl
+[174] Biber.pm:132> INFO - ERRORS: 1
