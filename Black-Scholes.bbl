@@ -1,0 +1,375 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{scholesapplication}{online}{}
+      \name{author}{1}{}{%
+        {{hash=7473a728828f5060bb66a5bfb2a86f7e}{%
+           family={A.\bibnamedelimi S.\bibnamedelimi Shinde},
+           familyi={A\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={K.\bibnamedelimi C.\bibnamedelimi Takale},
+           giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{7473a728828f5060bb66a5bfb2a86f7e}
+      \strng{fullhash}{7473a728828f5060bb66a5bfb2a86f7e}
+      \strng{bibnamehash}{7473a728828f5060bb66a5bfb2a86f7e}
+      \strng{authorbibnamehash}{7473a728828f5060bb66a5bfb2a86f7e}
+      \strng{authornamehash}{7473a728828f5060bb66a5bfb2a86f7e}
+      \strng{authorfullhash}{7473a728828f5060bb66a5bfb2a86f7e}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 18.04.2022)}
+      \field{title}{Study of Black-Scholes and its applications}
+      \verb{urlraw}
+      \verb https://pdf.sciencedirectassets.com/278653/1-s2.0-S1877705812X00183/1-s2.0-S1877705812019480/main.pdf
+      \endverb
+      \verb{url}
+      \verb https://pdf.sciencedirectassets.com/278653/1-s2.0-S1877705812X00183/1-s2.0-S1877705812019480/main.pdf
+      \endverb
+      \keyw{blackscholes,application}
+    \endentry
+    \entry{quadtraticvariation}{online}{}
+      \name{author}{1}{}{%
+        {{hash=4e8a406999de17a6fff7f67c9c707c8e}{%
+           family={a.gnedin},
+           familyi={a\bibinitperiod}}}%
+      }
+      \strng{namehash}{4e8a406999de17a6fff7f67c9c707c8e}
+      \strng{fullhash}{4e8a406999de17a6fff7f67c9c707c8e}
+      \strng{bibnamehash}{4e8a406999de17a6fff7f67c9c707c8e}
+      \strng{authorbibnamehash}{4e8a406999de17a6fff7f67c9c707c8e}
+      \strng{authornamehash}{4e8a406999de17a6fff7f67c9c707c8e}
+      \strng{authorfullhash}{4e8a406999de17a6fff7f67c9c707c8e}
+      \field{sortinit}{a}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 16.04.2022)}
+      \field{title}{Ito formula and processes}
+      \verb{urlraw}
+      \verb https://webspace.maths.qmul.ac.uk/a.gnedin/StochCalcDocs/StochCalcSection3.pdf
+      \endverb
+      \verb{url}
+      \verb https://webspace.maths.qmul.ac.uk/a.gnedin/StochCalcDocs/StochCalcSection3.pdf
+      \endverb
+      \keyw{quadratic,variation}
+    \endentry
+    \entry{options}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ad06bf06adee8d95fd62057f57acb739}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{ad06bf06adee8d95fd62057f57acb739}
+      \strng{fullhash}{ad06bf06adee8d95fd62057f57acb739}
+      \strng{bibnamehash}{ad06bf06adee8d95fd62057f57acb739}
+      \strng{authorbibnamehash}{ad06bf06adee8d95fd62057f57acb739}
+      \strng{authornamehash}{ad06bf06adee8d95fd62057f57acb739}
+      \strng{authorfullhash}{ad06bf06adee8d95fd62057f57acb739}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 16.04.2022)}
+      \field{title}{Options}
+      \verb{urlraw}
+      \verb https://www.investopedia.com/terms/o/option.asp
+      \endverb
+      \verb{url}
+      \verb https://www.investopedia.com/terms/o/option.asp
+      \endverb
+      \keyw{options}
+    \endentry
+    \entry{nyse}{online}{}
+      \name{author}{1}{}{%
+        {{hash=362b318ad334c835a2050485659be1a7}{%
+           family={Exchange},
+           familyi={E\bibinitperiod},
+           given={New\bibnamedelimb York\bibnamedelima Stock},
+           giveni={N\bibinitperiod\bibinitdelim Y\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{362b318ad334c835a2050485659be1a7}
+      \strng{fullhash}{362b318ad334c835a2050485659be1a7}
+      \strng{bibnamehash}{362b318ad334c835a2050485659be1a7}
+      \strng{authorbibnamehash}{362b318ad334c835a2050485659be1a7}
+      \strng{authornamehash}{362b318ad334c835a2050485659be1a7}
+      \strng{authorfullhash}{362b318ad334c835a2050485659be1a7}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 18.04.2022)}
+      \field{title}{GAMESTOP CORPORATION GME}
+      \verb{urlraw}
+      \verb https://www.nyse.com/quote/XNYS:GME/QUOTE
+      \endverb
+      \verb{url}
+      \verb https://www.nyse.com/quote/XNYS:GME/QUOTE
+      \endverb
+      \keyw{nyse,gamestop}
+    \endentry
+    \entry{optionsderivatives}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ceecd71c7d27182f0b52772476b8cc16}{%
+           family={Hull},
+           familyi={H\bibinitperiod},
+           given={John\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{ceecd71c7d27182f0b52772476b8cc16}
+      \strng{fullhash}{ceecd71c7d27182f0b52772476b8cc16}
+      \strng{bibnamehash}{ceecd71c7d27182f0b52772476b8cc16}
+      \strng{authorbibnamehash}{ceecd71c7d27182f0b52772476b8cc16}
+      \strng{authornamehash}{ceecd71c7d27182f0b52772476b8cc16}
+      \strng{authorfullhash}{ceecd71c7d27182f0b52772476b8cc16}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781292212890}
+      \field{title}{Options, Futures and Other Derivatives}
+      \field{year}{2018}
+      \keyw{options,futures}
+    \endentry
+    \entry{SDE}{online}{}
+      \name{author}{1}{}{%
+        {{hash=aba73ed000314fec04f1aa1ae26bac88}{%
+           family={Lalley},
+           familyi={L\bibinitperiod},
+           given={Steven\bibnamedelima P.},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{aba73ed000314fec04f1aa1ae26bac88}
+      \strng{fullhash}{aba73ed000314fec04f1aa1ae26bac88}
+      \strng{bibnamehash}{aba73ed000314fec04f1aa1ae26bac88}
+      \strng{authorbibnamehash}{aba73ed000314fec04f1aa1ae26bac88}
+      \strng{authornamehash}{aba73ed000314fec04f1aa1ae26bac88}
+      \strng{authorfullhash}{aba73ed000314fec04f1aa1ae26bac88}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 16.04.2022)}
+      \field{title}{Stochastic Differential Equations}
+      \verb{urlraw}
+      \verb https://galton.uchicago.edu/~lalley/Courses/385/SDE.pdf
+      \endverb
+      \verb{url}
+      \verb https://galton.uchicago.edu/~lalley/Courses/385/SDE.pdf
+      \endverb
+      \keyw{stochastic,differential,equations}
+    \endentry
+    \entry{itoprocess}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a9bb5173a0f16b364512964e7a4b026c}{%
+           family={Lyuu},
+           familyi={L\bibinitperiod},
+           given={Prof.\bibnamedelimi Yuh-Dauh},
+           giveni={P\bibinitperiod\bibinitdelim Y\bibinithyphendelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{a9bb5173a0f16b364512964e7a4b026c}
+      \strng{fullhash}{a9bb5173a0f16b364512964e7a4b026c}
+      \strng{bibnamehash}{a9bb5173a0f16b364512964e7a4b026c}
+      \strng{authorbibnamehash}{a9bb5173a0f16b364512964e7a4b026c}
+      \strng{authornamehash}{a9bb5173a0f16b364512964e7a4b026c}
+      \strng{authorfullhash}{a9bb5173a0f16b364512964e7a4b026c}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 15.04.2022)}
+      \field{title}{Ito Process}
+      \verb{urlraw}
+      \verb https://www.csie.ntu.edu.tw/~lyuu/finance1/2012/20120418.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.csie.ntu.edu.tw/~lyuu/finance1/2012/20120418.pdf
+      \endverb
+      \keyw{ito,process}
+    \endentry
+    \entry{blackscholes}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5290c8097a6ce6f10147f76242bb29fb}{%
+           family={Marek\bibnamedelima Capinski},
+           familyi={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Ekkehard\bibnamedelima Kopp},
+           giveni={E\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{5290c8097a6ce6f10147f76242bb29fb}
+      \strng{fullhash}{5290c8097a6ce6f10147f76242bb29fb}
+      \strng{bibnamehash}{5290c8097a6ce6f10147f76242bb29fb}
+      \strng{authorbibnamehash}{5290c8097a6ce6f10147f76242bb29fb}
+      \strng{authornamehash}{5290c8097a6ce6f10147f76242bb29fb}
+      \strng{authorfullhash}{5290c8097a6ce6f10147f76242bb29fb}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780521173001}
+      \field{title}{The Black-Scholes Model}
+      \field{year}{2012}
+      \keyw{black-scholes}
+    \endentry
+    \entry{nasdaq}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8b8230f1041d51dfdb7d59869230641c}{%
+           family={Nasdaq},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b8230f1041d51dfdb7d59869230641c}
+      \strng{fullhash}{8b8230f1041d51dfdb7d59869230641c}
+      \strng{bibnamehash}{8b8230f1041d51dfdb7d59869230641c}
+      \strng{authorbibnamehash}{8b8230f1041d51dfdb7d59869230641c}
+      \strng{authornamehash}{8b8230f1041d51dfdb7d59869230641c}
+      \strng{authorfullhash}{8b8230f1041d51dfdb7d59869230641c}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 18.04.2022)}
+      \field{title}{GameStop Historical Data}
+      \verb{urlraw}
+      \verb https://www.nasdaq.com/market-activity/stocks/gme
+      \endverb
+      \verb{url}
+      \verb https://www.nasdaq.com/market-activity/stocks/gme
+      \endverb
+      \keyw{wikipedia,blackscholes}
+    \endentry
+    \entry{wsb}{online}{}
+      \name{author}{1}{}{%
+        {{hash=6a18517ca1768b3a84cd792ba4677746}{%
+           family={Reddit.com},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{6a18517ca1768b3a84cd792ba4677746}
+      \strng{fullhash}{6a18517ca1768b3a84cd792ba4677746}
+      \strng{bibnamehash}{6a18517ca1768b3a84cd792ba4677746}
+      \strng{authorbibnamehash}{6a18517ca1768b3a84cd792ba4677746}
+      \strng{authornamehash}{6a18517ca1768b3a84cd792ba4677746}
+      \strng{authorfullhash}{6a18517ca1768b3a84cd792ba4677746}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 17.04.2022)}
+      \field{title}{wallstreetbets}
+      \verb{urlraw}
+      \verb https://www.reddit.com/r/wallstreetbets/
+      \endverb
+      \verb{url}
+      \verb https://www.reddit.com/r/wallstreetbets/
+      \endverb
+      \keyw{wsb,wallstreetbets,reddit}
+    \endentry
+    \entry{volkswagen}{online}{}
+      \name{author}{1}{}{%
+        {{hash=40d18d5a7ae85f9597a40f1306041fd1}{%
+           family={Sean},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{40d18d5a7ae85f9597a40f1306041fd1}
+      \strng{fullhash}{40d18d5a7ae85f9597a40f1306041fd1}
+      \strng{bibnamehash}{40d18d5a7ae85f9597a40f1306041fd1}
+      \strng{authorbibnamehash}{40d18d5a7ae85f9597a40f1306041fd1}
+      \strng{authornamehash}{40d18d5a7ae85f9597a40f1306041fd1}
+      \strng{authorfullhash}{40d18d5a7ae85f9597a40f1306041fd1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 17.04.2022)}
+      \field{title}{Remembering the Legendary Volkswagen Short Squeeze}
+      \verb{urlraw}
+      \verb https://www.warriortrading.com/volkswagen-short-squeeze/
+      \endverb
+      \verb{url}
+      \verb https://www.warriortrading.com/volkswagen-short-squeeze/
+      \endverb
+      \keyw{volkswagen,short,squeeze}
+    \endentry
+    \entry{shares}{online}{}
+      \name{author}{1}{}{%
+        {{hash=3cab4353b56af64c5deb8e7da2d86ec6}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={The\bibnamedelima Investopedia},
+           giveni={T\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{3cab4353b56af64c5deb8e7da2d86ec6}
+      \strng{fullhash}{3cab4353b56af64c5deb8e7da2d86ec6}
+      \strng{bibnamehash}{3cab4353b56af64c5deb8e7da2d86ec6}
+      \strng{authorbibnamehash}{3cab4353b56af64c5deb8e7da2d86ec6}
+      \strng{authornamehash}{3cab4353b56af64c5deb8e7da2d86ec6}
+      \strng{authorfullhash}{3cab4353b56af64c5deb8e7da2d86ec6}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 16.04.2022)}
+      \field{title}{Shares}
+      \verb{urlraw}
+      \verb https://www.investopedia.com/terms/s/shares.asp
+      \endverb
+      \verb{url}
+      \verb https://www.investopedia.com/terms/s/shares.asp
+      \endverb
+      \keyw{shares}
+    \endentry
+    \entry{wikipedia}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{%
+           family={Wikipedia},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 18.04.2022)}
+      \field{title}{BlackScholes equation}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_equation
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_equation
+      \endverb
+      \keyw{wikipedia,blackscholes}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
