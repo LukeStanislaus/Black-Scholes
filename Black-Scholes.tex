@@ -89,27 +89,39 @@
 
 \section{What are shares, options, and short selling?}
 \subsection{Shares}
-As defined in \cite{shares}, shares are "units of equity 
-ownership in a corporation." Writing shares is an effective way to raise 
-capital for a firm, as there is not legal mandate to be repaid to 
-investors, and to not pay interest. Common shares usually offer a voting 
-rights, giving shareholders more control over a business. The value of 
+As defined in \cite{shares}, shares are ``units of equity 
+ownership in a corporation.'' Writing shares can be an effective way to raise 
+capital for a firm, as there is no legal mandate to be repaid to 
+investors, and they do not need to pay interest. However, common shares usually offer voting 
+rights, giving shareholders control over a business. There can be some cases 
+of businesses where being private means it can struggle to functions effectively.
+For example, SpaceX, owned by Elon Musk, has remained a private company, as 
+shareholders can tend to look very closely at short term profits, taking less 
+considerating into the long term of a company, and a space launch company can 
+struggle to create consistent income, and in this case a small group of investors 
+who are fully onboard with the company vision will allow the company to lose 
+money in the short term in order to gain longer term profits. This was also 
+the plan with Tesla, as the company struggled to scale up production its new 
+car and had to spend lots of money in research. 
+\paragraph{}
+The value of 
 shares rises and falls with demand - meaning that owning a stock assumes 
-the owner a level of risk. Many stocks also offer dividends to 
+the owner a certain level of risk. Many stocks also offer dividends to 
 shareholders, which is a proportion of the businesses profits paid out 
-directly.
+directly and allows low growth, highly profitable business to offer value 
+to shareholders.
 \subsection{Options}
-Again, as defined in \cite{options}, "the term option refers to a 
+Again, as defined in \cite{options}, ``the term option refers to a 
 financial instrument based on the value of the underlying security, 
-such as stocks." An options contract offers the holder the option, 
-not the obligation (in contrast to a "future"), to buy or sell a share 
+such as stocks.'' An options contract offers the holder the option, 
+not the obligation (in contrast to a ``future''), to buy or sell a share 
 at a predetermined price. In themselves, they are a form of asset and 
-as such have their own valuations and market value. A "call" option 
+as such have their own valuations and market value. A ``call'' option 
 is when the writer of the option promises to sell the stock at a 
-predetermined price, called the "strike" at a predetermined time, 
-called the "exercise date". This means that if you own a call option and 
+predetermined price, (called the ``strike'') at a predetermined time, 
+(called the ``exercise date''). This means that if you own a call option and 
 the stock price increases above the strike price, the writer will still have 
-to honor the strike and so you can "exercise" the option 
+to honor the strike and so you can ``exercise'' the option 
 and immediately sell the stock, where your profit is the difference 
 between the strike and current price, less the cost of the option. 
 However, if the price goes below the strike, you would be forced 
@@ -124,17 +136,17 @@ in value, they could write a call (also known as a short call). This
 means that if the stock has increase in value and you don't already own 
 the security, you are obligated to purchase at the market rate, which 
 could take any arbitrary value. Further to this, as the price increases 
-over time, the short seller may be "margin called" - when to ensure the 
+over time, the short seller may be ``margin called'' - when to ensure the 
 seller can pay, the broker requests that the seller puts more money into 
 their account. If the short seller cannot afford this (and the further 
 risk it entails), they can close their position - by buying the stocks 
-they owe, the are protected from any further increases in price. However, 
+they owe, they are protected from any further increases in price. However, 
 by buying the stock off the open market they increase demand for the 
 stock, increasing the price further, forcing other short sellers to 
 close their positions, driving the price up further. This is what is 
 known as a short squeeze.
 \paragraph{}\label{typesofoption}
-There are also two types of options - a "european" and "american" 
+There are also two types of options - a ``european'' and ``american'' 
 derivative security. An european option can only be exercised at the 
 exercise date, while an american option can be exercised at any time up 
 to the exercise date. In this essay we shall only consider the simpler 
@@ -144,17 +156,17 @@ the financial markets.
 \section{Short squeezes and GameStop}
 A short squeeze is relatively uncommon occurance in financial markets, but they do 
 happen, normally due to substancial short interest in the stop, i.e. a large number 
-of the shares sold short, an a samll available float - the number of shares 
-available to purchaase on the market. This means, as the short sellers (traders 
+of the shares sold short, an a small available float - the number of shares 
+available to purchase on the market. This means, as the short sellers (traders 
 writing call options) are forced to close their positions, they are fighting over 
 a small number of stocks, inflating the price to extraordinary values. 
 \paragraph{}
-For example, 
-in 2008, Porsche began to buy large amounts of Volkswagen stock off the market. This 
+An extreme of an extremely artificial short squeeze was Volkswagen in 2008, where 
+Porsche began to buy large amounts of Volkswagen stock off the market. This 
 meant that only 6\% of the stock was available on the market, while 13\% of the stock 
 was sold short. Th\begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{volkswagen.jpg}
+    \includegraphics[width=0.75\textwidth]{volkswagenShortSqueeze.png}
     \caption{The stock price of Volkswagen during the short squeeze of 2008}
     \end{figure}is caused a scramble for the final few shares, and as short sellers 
 were squeezed out by the high price and were forced to close their position by buying 
@@ -166,29 +178,29 @@ according to \cite{volkswagen}, with massvive profits going over to Porsche.
 
 \paragraph{}
 The case of GameStop is similar - there was an extreme amount of short interest in 
-the share, so that at one point more than \%100 of the stock was sold short. With 
+the share, so that at one point more than 100\% of the stock was sold short. With 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.75\textwidth]{gamestopprice.png}
-    \caption{The stock price of GameStop over the past 5 years.}\label{gamestopprice}
+    \includegraphics[width=0.75\textwidth]{gameStopPriorValue.png}
+    \caption{GameStop daily closing price, data from \cite{nasdaq} }\label{gamestopprice}
     \end{figure}
     COVID and the death of the high street, a brick and mortar store like GameStop was 
 considered an extremely safe short sell - and as you can see from \ref{gamestopprice}  
 until early 2021, the price of GameStop was dropping extremely consistently. This  
 meant that it had an extremely high short interest, as you can see in \ref{shortinterest}. 
-This was noticed by a messageboard on the internet, called "r/wallstreetbets" \cite{wsb}. 
+This was noticed by a messageboard on the internet, called ``r/wallstreetbets'' \cite{wsb}. 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{shortinterest.png}
+    \includegraphics[width=0.75\textwidth]{shortinterest.png}
     \caption{The short interest in GameStop over the past 5 years.}
     \label{shortinterest}
     \end{figure}
 The independant investors saw 
 this as greed from the large hedge funds making billions of safe money from the demise 
 of a high street store, and when Ryan Cohen, who had just created the hugely sucessful 
-"Chewy", the largest onine pet retailer, joined GameStop's board as chairman. Investors
+``Chewy'', the largest online pet retailer, joined GameStop's board as chairman. Investors
 on r/wallstreetbets saw this as a very positive sign, as they imagined Ryan could turn 
-GameStop into "Amazon, but for computer games". Hence they attempted to create a 
+GameStop into ``Amazon, but for computer games''. Hence they attempted to create a 
 short squeeze in GameStop, hoping to profit from the greed of the hedge funds. They 
 began purchasing the stock, both increasing the price and reducing the available float, 
 so that as short sellers attempted to close their positions due to rising prices, they 
@@ -197,8 +209,8 @@ Volkswagen case. This caused a signfiicant short squeeze in the price, profiting
 independant investors who had invested early on, as seen in \ref{shortsqeeze}.
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{shortsqueeze.png}
-    \caption{The stock price of GameStop in early 2021, during the squeeze.}
+    \includegraphics[width=0.75\textwidth]{gameStopSqueezeValue.png}
+    \caption{The stock price of GameStop during the squeeze.}
     \label{shortsqeeze}
     \end{figure}
 
@@ -229,7 +241,7 @@ process $X = \{X_t, t>=0\}$ which solves
 X_t = X_0 + \int_{0}^{t} a(X_s, s)\mathrm{d}s + 
 \int_{0}^{t} b(X_s, s) \mathrm{d}W_s
 \end{equation}
-Here $X_0$ is the "scalar starting point", and $a,b$ are stochastic 
+Here $X_0$ is the ``scalar starting point'', and $a,b$ are stochastic 
 processes defined for $\{a(X_t, t) : t\geq0\} $ and $\{b(X_t, t) : t\geq0\}$. 
 Then we call $a$ the drift of the variable, and $b$ is the diffusion, 
 or more precisely in a financial context, volatity. \ref{randomprocess} is commonly 
@@ -326,7 +338,7 @@ We shall also require Ito's existence/uniqueness theorem, as defined in
     \label{isosexistence}
     If $\mu : \mathbb{R} \to \mathbb{R}$ and $\sigma : \mathbb{R} \to \mathbb{R}_+$ 
     are uniformally Lipschitz, then the stochastic differential equation 
-    \ref{randomprocess} has "strong solutions". This means that for any standard 
+    \ref{randomprocess} has ``strong solutions''. This means that for any standard 
     Brownian motion $\{W_t\}_{t\geq0}$, any admissable filtration $\mathbb{F} = 
     \{\mathcal{F}_t\}$ and any initial value $x \in \mathbb{R}$ there exists a 
     unique proccess $X_t = X_t^x$ which solves \ref{randomprocess}. 
@@ -391,7 +403,7 @@ Where at \ref{variance} we use the fact that
 \end{equation*}
 
 \ref{result} then shows that if $\mu = 0$ we know that the expectation of S(t) is 
-constant in time - it is not "drifting" in any direction, which justifies the 
+constant in time - it is not ``drifting'' in any direction, which justifies the 
 naming of $\mu$ as drift. We can then rearrange for $\mu$:
 
 \begin{equation} \label{mu}
@@ -442,18 +454,18 @@ state some assumptions.
 
 This assumption says that any option investment can be perfectly replciated by holdings in 
 the stock and a money market account directly. A key part of investing is the substantial 
-"leverage" employed in an option, as for a small (as a percentage of the share value) cost 
+``leverage'' employed in an option, as for a small (as a percentage of the share value) cost 
 you can purchase a large number of shares and sell them for a profit, without having to risk 
 investing such a large amount of money directly into the stock. Our assumption, however, says 
-that a "replicating strategy" always exists. More rigorously, we say that there exists a 
+that a ``replicating strategy'' always exists. More rigorously, we say that there exists a 
 pair of processes $(x,y)$ which satisfy 
 \begin{equation}
     H(t) = x(t)S(t) + y(t)A(t)
 \end{equation}
 where $H(t)$ is the option value at time T, an Ito proces.$S(t)$ and $A(t)$ are the risky 
 and riskless assets as defined in Asset Dynamics \ref{assetdyamics}. 
-As described in \cite{blackscholes}, this assumption "captures the idea that changes in the 
-values and holdings of assets are sole drivers of changes of wealth".
+As described in \cite{blackscholes}, this assumption ``captures the idea that changes in the 
+values and holdings of assets are sole drivers of changes of wealth''.
 
 Additionally we assume that the process $H(t)$ is of  the form 
 \begin{equation}
@@ -663,6 +675,11 @@ model as it essentialy expects a stock to perform similarly as in the past,
 so if there is a high volatility (induced, for example, by people on the 
 internet) alongside high short interest, due to the way the markets are 
 set up billions of dollars can change hands in a very short amount of time!
+
+\begin{equation}
+     \int_{-\infty}^{\infty} \!f(u) e^{\frac{-iku}{c}} \, \mathrm{d}u =
+    \tilde{f}(k/c)
+\end{equation}
 \printbibliography %Prints bibliography
 \end{document}
 

@@ -237,6 +237,32 @@
       \field{year}{2012}
       \keyw{black-scholes}
     \endentry
+    \entry{nasdaq}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8b8230f1041d51dfdb7d59869230641c}{%
+           family={Nasdaq},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b8230f1041d51dfdb7d59869230641c}
+      \strng{fullhash}{8b8230f1041d51dfdb7d59869230641c}
+      \strng{bibnamehash}{8b8230f1041d51dfdb7d59869230641c}
+      \strng{authorbibnamehash}{8b8230f1041d51dfdb7d59869230641c}
+      \strng{authornamehash}{8b8230f1041d51dfdb7d59869230641c}
+      \strng{authorfullhash}{8b8230f1041d51dfdb7d59869230641c}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 18.04.2022)}
+      \field{title}{GameStop Historical Data}
+      \verb{urlraw}
+      \verb https://www.nasdaq.com/market-activity/stocks/gme
+      \endverb
+      \verb{url}
+      \verb https://www.nasdaq.com/market-activity/stocks/gme
+      \endverb
+      \keyw{wikipedia,blackscholes}
+    \endentry
     \entry{wsb}{online}{}
       \name{author}{1}{}{%
         {{hash=6a18517ca1768b3a84cd792ba4677746}{%
