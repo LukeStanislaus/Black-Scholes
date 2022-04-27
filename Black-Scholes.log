@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2021.12.15)  27 APR 2022 17:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2021.12.15)  27 APR 2022 22:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -581,11 +581,12 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 \openout3 = `Black-Scholes.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'Black-Scholes.bbl' found.
- (Black-Scholes.bbl)
+Package biblatex Info: ... file 'Black-Scholes.bbl' not found.
+
+No file Black-Scholes.bbl.
 Package biblatex Info: Reference section=0 on input line 76.
 Package biblatex Info: Reference segment=0 on input line 76.
- (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+(C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count418
 \scratchdimen=\dimen182
@@ -648,38 +649,64 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
  (C:\Users\lukes\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+No file Black-Scholes.toc.
+\tf@toc=\write4
+\openout4 = `Black-Scholes.toc'.
+
+
+LaTeX Warning: Citation 'shares' on page 1 undefined on input line 92.
+
+
+LaTeX Warning: Citation 'options' on page 1 undefined on input line 114.
+
+[1
 
 {C:/Users/lukes/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 <volkswagenShortSqueeze.png, id=10, 462.528pt x 346.896pt>
 File: volkswagenShortSqueeze.png Graphic file (type png)
 <use volkswagenShortSqueeze.png>
-Package pdftex.def Info: volkswagenShortSqueeze.png  used on input line 169.
+Package pdftex.def Info: volkswagenShortSqueeze.png  used on input line 173.
 (pdftex.def)             Requested size: 313.69025pt x 235.27744pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Citation 'volkswagen' on page 2 undefined on input line 182.
 
 [2]
 <gameStopPriorValue.png, id=15, 462.528pt x 346.896pt>
 File: gameStopPriorValue.png Graphic file (type png)
 <use gameStopPriorValue.png>
-Package pdftex.def Info: gameStopPriorValue.png  used on input line 184.
+Package pdftex.def Info: gameStopPriorValue.png  used on input line 190.
 (pdftex.def)             Requested size: 313.69025pt x 235.27744pt.
+
+
+LaTeX Warning: Citation 'nasdaq' on page 3 undefined on input line 191.
+
+
+LaTeX Warning: Citation 'nasdaq' on page 3 undefined on input line 191.
+
+
+LaTeX Warning: Reference `gamestopprice' on page 3 undefined on input line 194.
+
+
+LaTeX Warning: Reference `shortinterest' on page 3 undefined on input line 201.
+
+
+LaTeX Warning: Citation 'wsb' on page 3 undefined on input line 202.
+
 <./images//shortinterest.png, id=16, 542.77782pt x 318.43968pt>
 File: ./images//shortinterest.png Graphic file (type png)
 <use ./images//shortinterest.png>
-Package pdftex.def Info: ./images//shortinterest.png  used on input line 194.
+Package pdftex.def Info: ./images//shortinterest.png  used on input line 205.
 (pdftex.def)             Requested size: 313.69025pt x 184.04404pt.
+
+LaTeX Warning: Reference `shortsqeeze' on page 3 undefined on input line 221.
+
 <gameStopSqueezeValue.png, id=17, 462.528pt x 346.896pt>
 File: gameStopSqueezeValue.png Graphic file (type png)
 <use gameStopSqueezeValue.png>
-Package pdftex.def Info: gameStopSqueezeValue.png  used on input line 212.
+Package pdftex.def Info: gameStopSqueezeValue.png  used on input line 227.
 (pdftex.def)             Requested size: 313.69025pt x 235.27744pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -687,59 +714,474 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4 <./gameStopPriorValue.png>] [5 <./images//shortinterest.png>] [6 <./gameStopSqueezeValue.png>] [7] [8] [9] [10]
-Overfull \hbox (37.79416pt too wide) detected at line 573
-[]
- []
 
-[11]
-<sigmavalue.png, id=59, 462.528pt x 346.896pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4 <./gameStopPriorValue.png>]
+
+LaTeX Warning: Reference `typesofoption' on page 5 undefined on input line 247.
+
+
+LaTeX Warning: Citation 'blackscholes' on page 5 undefined on input line 250.
+
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:256: Undefined control sequence.
+l.256 Where in \egref
+                     \ref{riskfree}, $r$ represents the risk-free rate and $...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `riskfree' on page 5 undefined on input line 256.
+
+
+LaTeX Warning: Citation 'itoprocess' on page 5 undefined on input line 264.
+
+[5 <./images//shortinterest.png>]
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:273: Undefined control sequence.
+l.273 ... in a financial context, volatity. \egref
+                                                  \ref{randomprocess} is com...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `randomprocess' on page 6 undefined on input line 273.
+
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:284: Undefined control sequence.
+l.284 ...d}t$. Then we can further simplify \egref
+                                                  \ref{randomprocess} as
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `randomprocess' on page 6 undefined on input line 284.
+
+
+LaTeX Warning: Citation 'itoprocess' on page 6 undefined on input line 293.
+
+[6 <./gameStopSqueezeValue.png>]
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:316: Undefined control sequence.
+l.316 ...mit of $\Delta x, \Delta t \to 0$, \egref
+                                                  \ref{taylorG} approaches
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `taylorG' on page 7 undefined on input line 316.
+
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:322: Undefined control sequence.
+l.322     Now we consider \egref
+                                \ref{limitG} to cover functions following It...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `limitG' on page 7 undefined on input line 322.
+
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:323: Undefined control sequence.
+l.323     in \egref
+                   \ref{itoprocess}, i.e.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `itoprocess' on page 7 undefined on input line 323.
+
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:329: Undefined control sequence.
+l.329 ...of $x$ of time $t$. We can rewrite \egref
+                                                  \ref{itoprocessG}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `itoprocessG' on page 7 undefined on input line 329.
+
+
+LaTeX Warning: Citation 'optionsderivatives' on page 7 undefined on input line 336.
+
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:343: Undefined control sequence.
+l.343  then we are done: using \egref
+                                     \ref{limitG}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `limitG' on page 7 undefined on input line 343.
+
+
+LaTeX Warning: Citation 'optionsderivatives' on page 7 undefined on input line 357.
+
+
+LaTeX Warning: Citation 'SDE' on page 7 undefined on input line 361.
+
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:367: Undefined control sequence.
+l.367     \egref
+                \ref{randomprocess} has ``strong solutions''. This means tha...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `randomprocess' on page 7 undefined on input line 367.
+
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:370: Undefined control sequence.
+l.370 ...roccess $X_t = X_t^x$ which solves \egref
+                                                  \ref{randomprocess}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `randomprocess' on page 7 undefined on input line 370.
+
+
+LaTeX Warning: Citation 'blackscholes' on page 7 undefined on input line 376.
+
+[7]
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:385: Undefined control sequence.
+l.385 price $S$. Using \egref
+                             \ref{isosexistence} we can prove existence and ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `isosexistence' on page 8 undefined on input line 385.
+
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:386: Undefined control sequence.
+l.386 \egref
+            \ref{riskyasset}:
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `riskyasset' on page 8 undefined on input line 386.
+
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:388: Undefined control sequence.
+l.388 First we rewrite \egref
+                             \ref{riskyasset} in integral form:
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `riskyasset' on page 8 undefined on input line 388.
+
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:394: Undefined control sequence.
+l.394 ...te our coefficients in the form of \egref
+                                                  \ref{randomprocess}:
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `randomprocess' on page 8 undefined on input line 394.
+
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:408: Undefined control sequence.
+l.408 ...n have that the unique solution to \egref
+                                                  \ref{riskyasset} is of the...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `riskyasset' on page 8 undefined on input line 408.
+
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:412: Undefined control sequence.
+l.412 This can be easily substituted into \egref
+                                                \ref{riskyint} show that thi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `riskyint' on page 8 undefined on input line 412.
+
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:412: Undefined control sequence.
+l.412 ...ef{riskyint} show that this solves \egref
+                                                  \ref{riskyasset}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `riskyasset' on page 8 undefined on input line 412.
+
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:425: Undefined control sequence.
+l.425 Where at \egref
+                     \ref{variance} we use the fact that
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `variance' on page 8 undefined on input line 425.
+
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:431: Undefined control sequence.
+l.431 \egref
+            \ref{result} then shows that if $\mu = 0$ we know that the expec...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `result' on page 8 undefined on input line 431.
+
+[8]
+
+LaTeX Warning: Citation 'blackscholes' on page 9 undefined on input line 445.
+
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:446: Undefined control sequence.
+l.446 $\sigma$ to apply to our model. \egref
+                                            \ref{mu} could suggest taking pa...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `mu' on page 9 undefined on input line 446.
+
+
+LaTeX Warning: Citation 'blackscholes' on page 9 undefined on input line 448.
+
+
+LaTeX Warning: Citation 'quadtraticvariation' on page 9 undefined on input line 456.
+
+
+LaTeX Warning: Reference `blackScholesAppendix' on page 9 undefined on input line 477.
+
+
+LaTeX Warning: Reference `typesofoption' on page 9 undefined on input line 478.
+
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:480: Undefined control sequence.
+l.480 ... to the definition of a call as in \egref
+                                                  \ref{initialvalue}:
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `initialvalue' on page 9 undefined on input line 480.
+
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:486: Undefined control sequence.
+l.486 to \egref
+               \ref{boundarycondition} we have
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `boundarycondition' on page 9 undefined on input line 486.
+
+[9]
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:494: Undefined control sequence.
+l.494 From \egref
+                 \ref{riskfree solution}, we get that
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `riskfree solution' on page 10 undefined on input line 494.
+
+c:/Users/lukes/Documents/Black-Scholes/Black-Scholes.tex:511: Undefined control sequence.
+l.511 We begin by using \egref
+                              \ref{volatilityapprox} a calculate a value of ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `volatilityapprox' on page 10 undefined on input line 511.
+
+
+LaTeX Warning: Citation 'nyse' on page 10 undefined on input line 512.
+
+<sigmavalue.png, id=52, 462.528pt x 346.896pt>
 File: sigmavalue.png Graphic file (type png)
 <use sigmavalue.png>
-Package pdftex.def Info: sigmavalue.png  used on input line 624.
+Package pdftex.def Info: sigmavalue.png  used on input line 517.
 (pdftex.def)             Requested size: 209.12683pt x 156.84808pt.
- [12 <./sigmavalue.png>]
-<kvalue.png, id=64, 462.528pt x 346.896pt>
+
+LaTeX Warning: Reference `sigmavalue' on page 10 undefined on input line 521.
+
+
+LaTeX Warning: Citation 'wikipedia' on page 10 undefined on input line 522.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Citation 'wikipedia' on page 10 undefined on input line 528.
+
+
+LaTeX Warning: Citation 'wikipedia' on page 10 undefined on input line 528.
+
+
+LaTeX Warning: Reference `kvalue' on page 10 undefined on input line 529.
+
+<kvalue.png, id=53, 462.528pt x 346.896pt>
 File: kvalue.png Graphic file (type png)
 <use kvalue.png>
-Package pdftex.def Info: kvalue.png  used on input line 642.
+Package pdftex.def Info: kvalue.png  used on input line 535.
 (pdftex.def)             Requested size: 209.12683pt x 156.84808pt.
-<tauvalue.png, id=65, 462.528pt x 346.896pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10]
+<tauvalue.png, id=57, 462.528pt x 346.896pt>
 File: tauvalue.png Graphic file (type png)
 <use tauvalue.png>
-Package pdftex.def Info: tauvalue.png  used on input line 656.
+Package pdftex.def Info: tauvalue.png  used on input line 549.
 (pdftex.def)             Requested size: 209.12683pt x 156.84808pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13 <./kvalue.png>]
-Overfull \hbox (36.90096pt too wide) in paragraph at lines 684--684
-[]\OT1/cmr/m/n/10.95 John C. Hull. \OT1/cmr/m/it/10.95 Op-tions, Fu-tures and Other Deriva-tives\OT1/cmr/m/n/10.95 . Pear-son, 2018. \OT1/cmr/m/sc/10.95 isbn\OT1/cmr/m/n/10.95 : 9781292212890. 
+[11 <./sigmavalue.png> <./kvalue.png>]
+
+LaTeX Warning: Empty bibliography on input line 572.
+
+[12 <./tauvalue.png>]
+
+LaTeX Warning: Reference `riskfree solution' on page 13 undefined on input line 591.
+
+
+LaTeX Warning: Citation 'blackscholes' on page 13 undefined on input line 602.
+
+
+LaTeX Warning: Reference `assetdyamics' on page 13 undefined on input line 619.
+
+
+LaTeX Warning: Citation 'blackscholes' on page 13 undefined on input line 620.
+
+
+LaTeX Warning: Reference `replicatingstrategy' on page 13 undefined on input line 637.
+
+[13]
+
+LaTeX Warning: Reference `itolemma' on page 14 undefined on input line 642.
+
+
+LaTeX Warning: Reference `replicatingderivative' on page 14 undefined on input line 651.
+
+
+LaTeX Warning: Reference `riskfree' on page 14 undefined on input line 660.
+
+
+LaTeX Warning: Reference `riskyasset' on page 14 undefined on input line 660.
+
+
+LaTeX Warning: Reference `itoformulasolve' on page 14 undefined on input line 662.
+
+
+LaTeX Warning: Reference `financingcondition' on page 14 undefined on input line 662.
+
+
+LaTeX Warning: Reference `dw' on page 14 undefined on input line 669.
+
+
+LaTeX Warning: Reference `dt' on page 14 undefined on input line 674.
+
+
+LaTeX Warning: Reference `replicatingstrategy' on page 14 undefined on input line 687.
+
+[14]
+
+LaTeX Warning: Citation 'scholesapplication' on page 15 undefined on input line 705.
+
+
+LaTeX Warning: Reference `riskyasset' on page 15 undefined on input line 705.
+
+
+Overfull \hbox (37.79416pt too wide) detected at line 726
+[]
  []
 
+[15] (Black-Scholes.aux)
 
-Overfull \hbox (11.64552pt too wide) in paragraph at lines 684--684
-[]\OT1/cmr/m/n/10.95 Steven P. Lal-ley. \OT1/cmr/m/it/10.95 Stochas-tic Dif-fer-en-tial Equa-tions\OT1/cmr/m/n/10.95 . \OT1/cmr/m/sc/10.95 url\OT1/cmr/m/n/10.95 : $\OT1/cmtt/m/n/10.95 https : / / galton . uchicago .
- []
+LaTeX Warning: There were undefined references.
 
-[14 <./tauvalue.png>] [15] (Black-Scholes.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                Black-Scholes
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'Black-Scholes.run.xml'.
 \openout1 = `Black-Scholes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 14084 strings out of 478659
- 263696 string characters out of 2845919
- 988380 words of memory out of 3000000
- 32018 multiletter control sequences out of 15000+600000
- 415052 words of font info for 70 fonts, out of 8000000 for 9000
+ 14020 strings out of 478659
+ 261750 string characters out of 2845919
+ 987464 words of memory out of 3000000
+ 31955 multiletter control sequences out of 15000+600000
+ 415204 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,13n,79p,785b,1640s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\lukes\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Black-Scholes.pdf (15 pages, 584410 bytes).
+ 69i,13n,79p,785b,1651s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\lukes\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Black-Scholes.pdf (15 pages, 539480 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
+ 146 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
