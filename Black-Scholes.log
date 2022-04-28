@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2021.12.15)  28 APR 2022 09:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2021.12.15)  28 APR 2022 11:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -679,43 +679,51 @@ File: gameStopSqueezeValue.png Graphic file (type png)
 <use gameStopSqueezeValue.png>
 Package pdftex.def Info: gameStopSqueezeValue.png  used on input line 227.
 (pdftex.def)             Requested size: 230.04079pt x 172.53185pt.
-[3] [4 <./volkswagenShortSqueeze.png> <./gameStopPriorValue.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5 <./images//shortinterest.png>] [6 <./gameStopSqueezeValue.png>] [7] [8] [9]
-<sigmavalue.png, id=52, 462.528pt x 346.896pt>
+[3]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4 <./volkswagenShortSqueeze.png> <./gameStopPriorValue.png>] [5 <./images//shortinterest.png> <./gameStopSqueezeValue.png>] [6] [7] [8]
+<sigmavalue.png, id=49, 462.528pt x 346.896pt>
 File: sigmavalue.png Graphic file (type png)
 <use sigmavalue.png>
-Package pdftex.def Info: sigmavalue.png  used on input line 445.
+Package pdftex.def Info: sigmavalue.png  used on input line 456.
 (pdftex.def)             Requested size: 209.12683pt x 156.84808pt.
+ [9]
 <kvalue.png, id=53, 462.528pt x 346.896pt>
 File: kvalue.png Graphic file (type png)
 <use kvalue.png>
-Package pdftex.def Info: kvalue.png  used on input line 462.
+Package pdftex.def Info: kvalue.png  used on input line 481.
 (pdftex.def)             Requested size: 209.12683pt x 156.84808pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10 <./sigmavalue.png>]
-<tauvalue.png, id=58, 462.528pt x 346.896pt>
+<tauvalue.png, id=54, 462.528pt x 346.896pt>
 File: tauvalue.png Graphic file (type png)
 <use tauvalue.png>
-Package pdftex.def Info: tauvalue.png  used on input line 475.
+Package pdftex.def Info: tauvalue.png  used on input line 494.
 (pdftex.def)             Requested size: 209.12683pt x 156.84808pt.
- [11 <./kvalue.png> <./tauvalue.png>]
-Overfull \hbox (36.90096pt too wide) in paragraph at lines 498--498
+[10 <./sigmavalue.png>]
+Overfull \hbox (0.99857pt too wide) detected at line 502
+[]
+ []
+
+[11 <./kvalue.png> <./tauvalue.png>]
+Overfull \hbox (36.90096pt too wide) in paragraph at lines 517--517
 []\OT1/cmr/m/n/10.95 John C. Hull. \OT1/cmr/m/it/10.95 Op-tions, Fu-tures and Other Deriva-tives\OT1/cmr/m/n/10.95 . Pear-son, 2018. \OT1/cmr/m/sc/10.95 isbn\OT1/cmr/m/n/10.95 : 9781292212890. 
  []
 
 
-Overfull \hbox (11.64552pt too wide) in paragraph at lines 498--498
+Overfull \hbox (11.64552pt too wide) in paragraph at lines 517--517
 []\OT1/cmr/m/n/10.95 Steven P. Lal-ley. \OT1/cmr/m/it/10.95 Stochas-tic Dif-fer-en-tial Equa-tions\OT1/cmr/m/n/10.95 . \OT1/cmr/m/sc/10.95 url\OT1/cmr/m/n/10.95 : $\OT1/cmtt/m/n/10.95 https : / / galton . uchicago .
  []
 
 [12] [13] [14]
-Overfull \hbox (37.79416pt too wide) detected at line 651
+Overfull \hbox (37.79416pt too wide) detected at line 670
 []
  []
 
@@ -725,15 +733,15 @@ Package logreq Info: Writing requests to 'Black-Scholes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 14097 strings out of 478659
- 263916 string characters out of 2845919
- 989395 words of memory out of 3000000
- 32028 multiletter control sequences out of 15000+600000
+ 14099 strings out of 478659
+ 263946 string characters out of 2845919
+ 990413 words of memory out of 3000000
+ 32030 multiletter control sequences out of 15000+600000
  415052 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,13n,79p,785b,1737s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\lukes\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/lukes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Black-Scholes.pdf (17 pages, 567214 bytes).
+Output written on Black-Scholes.pdf (17 pages, 568011 bytes).
 PDF statistics:
  162 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

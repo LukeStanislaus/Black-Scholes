@@ -9,7 +9,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2}Options}{2}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{3}{}%
+\contentsline {paragraph}{}{2}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{3}{}%
 \defcounter {refsection}{0}\relax 
@@ -17,27 +17,25 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{3}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{4}{}%
+\contentsline {paragraph}{}{3}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{5}{}%
+\contentsline {paragraph}{}{6}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Asset dynamics}{6}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1}A risk-free asset}{6}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Ito processes}{7}{}%
+\contentsline {subsection}{\numberline {3.2}Ito processes}{6}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3}A risky asset}{7}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4}Considering the model parameters}{8}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Options}{9}{}%
+\contentsline {section}{\numberline {4}The Black-Scholes Model}{9}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}The Black-Scholes Model}{9}{}%
+\contentsline {section}{\numberline {5}Modelling GameStop}{10}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Modelling GameStop}{10}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Conclusion}{12}{}%
+\contentsline {section}{\numberline {6}Conclusion}{11}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A}Risk-free value of an option}{13}{}%
 \defcounter {refsection}{0}\relax 

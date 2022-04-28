@@ -78,7 +78,7 @@
 \maketitle
 \tableofcontents
 \begin{abstract}
-    This essay is about the Black-Scholes formulwhaa, and how it could be 
+    This essay is about the Black-Scholes formula, and how it could be 
     used to explain the short squeeze of GameStop in early 2021. We begin 
     with explaining shares, options and short selling, and move on to 
     deriving the Black-Scholes formula, and finally apply it to GameStop.
@@ -157,7 +157,7 @@ European option, although the American option is far more common in
 the financial markets. 
 
 \section{Short squeezes and GameStop}
-A short squeeze is relatively uncommon occurencein financial markets, but they do 
+A short squeeze is relatively uncommon occurence in financial markets, but they do 
 happen, normally due to substantial short interest in the stock, i.e.,\  a large number 
 of the shares sold short, an a small available float - the number of shares 
 available to purchase on the market. This means, as the short sellers (traders 
@@ -254,7 +254,8 @@ First we shall define a risk-free asset, which we shall need to define in order 
 calculate the cost of value of an option at time $t$. This is because we can't do 
 as described in~\ref{typesofoption}, where we could simply buy another option from the 
 market. Since this is what we are trying to calculate, this would make no sense! Therefore, 
-we must take out a loan for the stock, where in the case of 
+The process of finding the risk-free value of an option is detailed in~\ref{riskfreevalue} 
+and shall be required in the derivation of the Black-Scholes Model's boundary conditions.
 A risk-free asset, as defined in the Black-Scholes Model~\cite{blackscholes} can be thought
 of as a money-market account with zero risk, for example a bank account with an interest 
 rate. It is described by the deterministic function 
@@ -268,15 +269,20 @@ the ordinary differential equation $A'(t) = rA(t)$, which has the unique solutio
     A(t) =e^{rt}
 \end{equation}
 \subsection{Ito processes}
-
-According to Ito process~\cite{itoprocess}, an Ito process is the stochastic (random) 
+Given a Brownian Motion $W(t)$ with filtration $(\mathcal{F}_t, t \geq 0 )$
+According to~\cite{itoprocess}, an Ito process is the stochastic (random) 
 process $X = \{X_t, t \geq 0\}$ which solves 
 \begin{equation} \label{randomprocess}
 X_t = X_0 + \int_{0}^{t} a(X_s, s)\mathrm{d}s + 
 \int_{0}^{t} b(X_s, s) \mathrm{d}W_s
 \end{equation}
-Here $X_0$ is the ``scalar starting point'', and $a,b$ are stochastic 
-processes defined for $\{a(X_t, t) : t\geq0\} $ and $\{b(X_t, t) : t\geq0\}$. 
+
+Here $a,b$ are stochastic 
+processes defined for $\{a(X_t, t) : t\geq0\} $ and $\{b(X_t, t) : t\geq0\}$ which are 
+continuous in $t$ and adapted to (can be measured at) our filtration $\mathcal{F}_t$ 
+time $t$ and 
+both satisfy $c$ in 
+\[\int_{0}^{\infty} c(X_s, s) \mathrm{d}s \leq \infty\]
 Then we call $a$ the drift of the variable, and $b$ is the diffusion, 
 or more precisely in a financial context, volatility.~\eqref{randomprocess} is commonly 
 written as 
@@ -289,19 +295,18 @@ or even
 \end{equation}
 This converges at some time $T$ to Brownian motion with instantaneous drift $a_T$ and
 variance $b_T^2$. We let $dW$ be normally distributed with mean zero and variance 
-$\mathrm{d}t$. Then we can further simplify~\eqref{randomprocess} as 
+$\mathrm{d}t$. This can also be written discretely as 
 \begin{equation}
     \mathrm{d}X_t = a_t\mathrm{d}t + b_t \sqrt{\mathrm{d}t}\xi
 \end{equation}
 where
 \begin{equation}
-    \xi \sim \mathcal{N}(\mu,\,\sigma^{2})
+    \xi \sim \mathcal{N}(1,\,0)
 \end{equation}
-
 
 \subsection{A risky asset}
 
-A risk asset, as defined in The Black-Scholes Model~\cite{blackscholes}, 
+A risky asset, as defined in The Black-Scholes Model~\cite{blackscholes}, 
 can be thought of as a stock, is represented as the Ito process
 
 \begin{equation} \label{riskyasset}
@@ -310,7 +315,8 @@ can be thought of as a stock, is represented as the Ito process
 
 with $S(0)$ a given starting price of the stock, $\mu \in \mathbb{R}$ 
 is again the drift and $\sigma > 0$ is the volatility of the stock 
-price $S$. Using~\eqref{isosexistence} we can prove existence and uniqueness of 
+price $S$. Using Theorem~\eqref{isosexistence} we can prove existence and uniqueness of 
+the solution to  
 ~\eqref{riskyasset}:
 
 First we rewrite~\eqref{riskyasset} in integral form:
@@ -334,14 +340,16 @@ then we check Lipschitz continuity:
 \end{align}
 
 We then have that the unique solution to~\eqref{riskyasset} is of the form 
-\begin{equation}
+\begin{equation}\label{riskysolution}
     S(t) = S(0)\exp\{\mu t - \frac{\sigma^2}{2}t + \sigma W(t)\}.
 \end{equation}
 This can be easily substituted into~\eqref{riskyint} show that this solves~\eqref{riskyasset}.
 
 \subsection{Considering the model parameters}
 
-Now we have a solution to a risky asset, we can consider $\mathbb{E}(S(t))$:
+Now we have derived this risky asset, of which an option will be a derivative, 
+we need to ensure that the parameters we find are as accurate as possible. To 
+go about this, we can consider $\mathbb{E}(S(t))$:
 
 \begin{align}
     \mathbb{E}(S(t))  = &&S(t)\mathbb{E}(\exp\{\mu - \frac{1}{2}\sigma t + \sigma W(t)\})\\
@@ -358,7 +366,7 @@ Where at~\eqref{variance} we use the fact that
 
 ~\eqref{result} then shows that if $\mu = 0$ we know that the expectation of $S(t)$ is 
 constant in time - it is not ``drifting'' in any direction, which justifies the 
-naming of $\mu$ as drift. We can then rearrange for $\mu$:
+name of $\mu$ as drift. We can then rearrange for $\mu$:
 
 \begin{equation} \label{mu}
     \mu = \frac{1}{t}\ln{\frac{\mathbb{E}(S(t))}{S(0)}}
@@ -372,16 +380,20 @@ The variance of the return is
 \end{align}
 as defined in~\cite{blackscholes}. Clearly, we want to try to calculate $\mu$ and 
 $\sigma$ to apply to our model.~\eqref{mu} could suggest taking past values of the 
-stock value and taking an average to find a value of $\mu$, but according to 
-~\cite{blackscholes} the accuracy of this is poor. 
-A more effective approximation of the volatility is, for example, the process 
+stock value and taking an average to find a value of $\mu$, but according statistical 
+theory the accuracy of this is poor - past performance of a stock doesn't imply future 
+performance.
+We can however much more effectively estimate the volatility. This is found by taking 
+the logarithm 
+of~\eqref{riskysolution}
 
-\begin{equation}
-    \ln{S(t)} = \ln{S(0)} + (\mu - \frac{1}{2}\sigma^2)t + \sigma W(t))
-\end{equation}
+\[
+    \ln{S(t)} = \ln{S(0)} + (\mu - \frac{1}{2}\sigma^2)t + \sigma W(t)
+\]
 
-which is an Ito process with the constant characteristics $a(t) = (\mu - \frac{1}{2}\sigma^2)$
- and $b(t) = \sigma$. By~\cite{quadtraticvariation}, we have that
+which we notice is an Ito process with the constant characteristics 
+$a(t) = (\mu - \frac{1}{2}\sigma^2)$
+ and $b(t) = \sigma$. By~\cite{quadtraticvariation}, we have that for an Ito process
  \begin{equation}
      {(\mathrm{d}S(t))}^2 = b^2(t) \mathrm{d}t
  \end{equation}
@@ -397,9 +409,9 @@ then
     \sigma = \sqrt{\frac{1}{2}\sum_k {(\ln{\frac{S(t_{k+1})}{S(t_k)}})}^2}
     \label{volatilityapprox}
 \end{align}
-which is a much better estimate of the volatility coefficient, and is described as the 
-sample volatility.
-\section{Options}
+which is a good estimate of the volatility coefficient, and is described as the 
+``sample volatility''. We shall get concrete data from GameStop and use this formula 
+to find our value of volatility later on in this essay.
 
 \section{The Black-Scholes Model}
 Starting from the model derived and fully defined in~\ref{blackScholesAppendix}, we may consider final and boundary 
@@ -436,22 +448,29 @@ We then finally get the following, the Black-Scholes European Call option IBVP:
 \end{align}
 
 \section{Modelling GameStop}
-We begin by using~\eqref{volatilityapprox} a calculate a value of $\sigma$. Using data from 
-~\cite{nyse} between 2018 - 2020, in the attached excel book we 
-calculate $\sigma = 1.007310782$. We also set 
+We begin by using~\eqref{volatilityapprox} a calculate a value of $\sigma$. Using data from
+~\cite{nyse} between 2018 - 2020, I solve $\sigma = 1.0073\dots$. We also set 
 $r=1.004$, approximately the average bank rate between 2018 - 2020.
 \begin{figure}[h] 
     \centering
     \includegraphics[width=0.5\textwidth]{sigmavalue.png} 
     \caption[]{}\label{sigmavalue}
 \end{figure}
-~\eqref{sigmavalue} shows how returns from options are far more consistent and safer with a low volatility,
- like in the GameStop case. In the above case we have used the solution from~\cite{wikipedia}, 
- so the upper to sigma is $x>0$ so:
+~\eqref{sigmavalue} shows how returns from options are far more consistent and safer with a low volatility
+stock like in the GameStop case. This relation between volatility in stock compared to 
+volatility in option value explains how a short squeeze can be forced to occur - increased 
+volatility, not even an increase in the price of the stock, can cause short sellers to be 
+margin called, as the broker solves the Black-Scholes PDE and notices the volatility has 
+increased substantially. This means that the short seller may be margin called due to 
+the increased risk in the option, and may simply decide to close their position, and even though 
+stock price may have gone down, the short seller has to buy a stock, pushing the price upwards. 
+This explains how only a small number of people can force a short squeeze.
+In the above case we have used the solution from~\cite{wikipedia}, 
+ so the upper bound to sigma is $x>0$ so:
 \begin{align}
     x =&& \ln{\frac{z}{K}} + (r - \frac{1}{2} \sigma^2)\tau > 0 && 
     \text{with $\tau$, $x$ as defined in~\cite{wikipedia}} \\
-    \implies |\sigma| <&& \sqrt{\frac{2}{\tau} \ln{\frac{z}{K} + 2r}} && \approx 1.435
+    \implies |\sigma| <&& \sqrt{\frac{2}{\tau} \ln{\frac{z}{K} + 2r}} && = 1.44\dots
 \end{align}
 Modifying values of K, the strike price, we see in~\eqref{kvalue} the increased risk 
 of buying options with a more expensive strike price, which makes sense - if 
@@ -465,7 +484,7 @@ the stock drops below this and so expires worthless.
 Again here we have a mathematical limit on the value of k:
 \begin{align}
     \ln{\frac{z}{K}} + (r - \frac{1}{2} \sigma^2)\tau > 0 \\
-    \implies |k| < ze^{\frac{1}{2}\sigma^2 - r} \approx 12.171166822082068
+    \implies |k| < ze^{\frac{1}{2}\sigma^2 - r} = 12.17\dots
 \end{align}
 We finish with an analysis for different values of $\tau$, where we notice that 
 the time to expiry has no effect on the distribution of $u$, the value of the 
@@ -478,7 +497,7 @@ option.
 \begin{align}
     \ln{\frac{z}{K}} + (r - \frac{1}{2} \sigma^2)\tau > 0 \\
     \implies |\tau| > \frac{\ln{\frac{K}{z}}}{r - \frac{1}{2}\sigma^2} 
-    \approx -0.0510&& \text{although note that time is 
+    = -0.05\dots&& \text{although note that time is 
     defined to be non-negative.}
 \end{align}
 \section{Conclusion}
@@ -498,7 +517,7 @@ set up billions of dollars can change hands in a very short amount of time!
 
 \appendix
 
-\section{Risk-free value of an option}
+\section{Risk-free value of an option}\label{riskfreevalue}
 A key fact to note is that even with a 
 European option, all parties involved can close their positions at any time. 
 \subsection*{Option holders}
@@ -662,7 +681,7 @@ Where we remember that:
 As defined in~\cite{itoprocess}, Ito's lemma is 
 
 \begin{lemma}[Ito's Lemma]\label{itolemma}
-    Suppose $f: R \to R$ is twice continuously differentiable and 
+    Suppose $f: \mathbb{R} \to \mathbb{R}$ is twice continuously differentiable and 
     $\mathrm{d}X = a_t\mathrm{d}t + b_t\mathrm{d}W$. Then $f(X)$ is the Ito process,
     \begin{equation}
         f(X_t)

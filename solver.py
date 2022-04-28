@@ -3,6 +3,9 @@ import math
 import matplotlib.pyplot as plt
 from scipy import stats
 def blackscholes(r,sigma,K,S,normn,tau):
+
+
+
     x = math.log(S/K) + (r - 1/2*math.pow(sigma,2))*tau
     d1 = np.random.normal(0, (1/(sigma * math.sqrt(tau)))*
         ((x + 1/2 * math.pow(sigma,2) * tau ) + 1/2 * math.pow(sigma,2) + tau), normn)
@@ -19,8 +22,6 @@ def blackscholes(r,sigma,K,S,normn,tau):
     x = np.linspace(-100,100,300)
     y=density(x)
     return (x,y)
-
-
 
 
 r=1.004
