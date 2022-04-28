@@ -35,22 +35,22 @@ for i in range(10,110, 10):
     sigmaVar= maxsigma*i/100
     x = math.log(S/K) + (r - 1/2*math.pow(0,2))
     (x,y) = blackscholes(r, sigmaVar, K, S, normn, tau)
-    handles[int(i/10 -1)], = plt.plot(x, y, str(i/100), label="sigma =" +str(round(sigmaVar,2)))
+    handles[int(i/10 -1)], = plt.plot(x, y, str((i+10)/110), label=str(round(sigmaVar,2)))
     # increasing sigma = more white
     
-    plt.title("Density Plot of C with different values of sigma")
-plt.legend(handles = handles)
+    plt.title("Density Plot of C with different values of σ")
+plt.legend(handles = handles, title="Value of σ")
 plt.savefig("sigmavalue.png")
 maxK = S * math.pow(math.e, (1/2)* math.pow(sigma, 2) - r)
 for i in range(10,110, 10):
     kVar=maxK * i/100
     (x,y) = blackscholes(r, sigma, kVar, S, normn, tau)
 
-    handles[int(i/10 -1)], = plt.plot(x, y, str(i/100), label="k = "+ str(round(kVar,2)))
+    handles[int(i/10 -1)], = plt.plot(x, y, str((i+10)/110), label=str(round(kVar,2)))
 
 
     plt.title("Density Plot of C with different values of k")
-plt.legend(handles = handles)
+plt.legend(handles = handles, title = "Values of strike K")
 plt.savefig("kvalue.png")
 maxTau = (math.log(K/S,math.e))/(r-1/2*math.pow(sigma,2))
 print(maxTau)
@@ -58,9 +58,9 @@ for i in range(10,110, 10):
     tauVar=abs(maxTau * i)
     (x,y) = blackscholes(r, sigma, K, S, normn, tauVar)
 
-    handles[int(i/10 -1)], = plt.plot(x, y, str(i/100), label="tau = "+ str(round(tauVar,2)))
+    handles[int(i/10 -1)], = plt.plot(x, y, str((i+10)/110), label= str(round(tauVar,2)))
 
 
-    plt.title("Density Plot of C with different values of tau")
-plt.legend(handles = handles)
+    plt.title("Density Plot of C with different values of τ")
+plt.legend(handles = handles, title= "Values of τ")
 plt.savefig("tauvalue.png")
